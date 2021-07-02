@@ -1,0 +1,35 @@
+openapi: 3.0.0
+info:
+  title: Admin Sourcing journey
+  version: v1.0.0
+paths:
+  /api/admin/sourcing_journeys:
+    get:
+      summary: index  admin sourcing journeys
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  events:
+                    type: string
+      parameters:
+      - name: agent_kind
+        in: path
+        schema:
+          type: string
+      - name: state
+        in: path
+        schema:
+          type: string
+      - name: name
+        in: path
+        schema:
+          type: string

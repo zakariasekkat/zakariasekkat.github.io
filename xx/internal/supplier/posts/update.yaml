@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Internal Supplier Post
+  version: v1.0.0
+paths:
+  /api/internal/supplier/posts/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                post:
+                  type: object
+                  properties:
+                    cover_photo_title:
+                      type: string
+                    cover_photo_alt:
+                      type: string
+                    cover_photo_description:
+                      type: string
+                    media_type:
+                      type: string
+                    highlight:
+                      type: string

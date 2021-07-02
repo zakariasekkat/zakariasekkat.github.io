@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Locations activity
+  version: v1.0.0
+paths:
+  /api/admin/platform/locations_activities:
+    get:
+      summary: index  admin platform locations activities
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  slug:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string

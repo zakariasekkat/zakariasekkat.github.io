@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Products taxonomy
+  version: v1.0.0
+paths:
+  /api/admin/products_taxonomies/:id:
+    get:
+      summary: show  admin products taxonomy

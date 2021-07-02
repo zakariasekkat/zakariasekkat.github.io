@@ -1,0 +1,38 @@
+openapi: 3.0.0
+info:
+  title: Internal Auditor
+  version: v1.0.0
+paths:
+  /api/internal/auditors/:id/standards:
+    get:
+      summary: standards  standards internal auditor
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  web_path:
+                    type: string
+                  name:
+                    type: string
+                  logo:
+                    type: string
+                  cover:
+                    type: string
+                  state:
+                    type: string
+                  slug:
+                    type: string
+                  include_in_search:
+                    type: string
+                  search_position:
+                    type: string
+                  kind:
+                    type: string
+                  certification_types:
+                    type: string

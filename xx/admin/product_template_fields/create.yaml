@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Admin Product template field
+  version: v1.0.0
+paths:
+  /api/admin/product_templates/:product_template_id/fields:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                field:
+                  type: object
+                  properties:
+                    label:
+                      type: string
+                    value:
+                      type: string
+                    kind_id:
+                      type: string
+                    dictionary_id:
+                      type: string
+                    template:
+                      type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Marketplaces Product
+  version: v1.0.0
+paths:
+  /api/admin/platform/marketplaces/:marketplace_id/products:
+    get:
+      summary: index  admin platform marketplace products

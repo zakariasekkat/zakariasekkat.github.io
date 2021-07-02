@@ -1,0 +1,24 @@
+openapi: 3.0.0
+info:
+  title: Internal Authenticated auto complete
+  version: v1.0.0
+paths:
+  /api/internal/autocompletes/joinable_companies/:country_id:
+    get:
+      summary: joinable_companies  
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  logo_url:
+                    type: string
+                  joinable:
+                    type: string

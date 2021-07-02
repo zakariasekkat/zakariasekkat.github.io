@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Internal Company dashboard Moderated company lead
+  version: v1.0.0
+paths:
+  /api/internal/company_dashboard/moderated_company_leads:
+    post:
+      summary: create  internal company dashboard moderated company leads
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                moderated_company_lead:
+                  type: object
+                  properties:
+                    message:
+                      type: string
+                    recipient_company_id:
+                      type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Company
+  version: v1.0.0
+paths:
+  /api/admin/companies/:id/add_user_to_company:
+    post:
+      summary: add_user_to_company  add user to company admin company

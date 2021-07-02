@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Product
+  version: v1.0.0
+paths:
+  /api/admin/products/:id/update_fields:
+    patch:
+      summary: update_fields  update fields admin product

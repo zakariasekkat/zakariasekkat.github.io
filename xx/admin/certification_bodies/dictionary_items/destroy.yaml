@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Certification bodies Dictionary item
+  version: v1.0.0
+paths:
+  /api/admin/certification_bodies/:certification_body_id/dictionary_items/:id:
+    delete:
+      summary: destroy  admin certification body dictionary item

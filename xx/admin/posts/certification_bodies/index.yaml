@@ -1,0 +1,107 @@
+openapi: 3.0.0
+info:
+  title: Admin Posts Certification body
+  version: v1.0.0
+paths:
+  /api/admin/posts/:post_id/certification_bodies:
+    get:
+      summary: index  admin post certification bodies
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  location:
+                    type: string
+                  cover:
+                    type: string
+                  logo:
+                    type: string
+                  instagram_url:
+                    type: string
+                  facebook_url:
+                    type: string
+                  twitter_url:
+                    type: string
+                  about_description:
+                    type: string
+                  state:
+                    type: string
+                  sorting_score:
+                    type: string
+                  featured_in_search:
+                    type: string
+                  tagline:
+                    type: string
+                  website:
+                    type: string
+                  linkedin:
+                    type: string
+                  founded_in:
+                    type: string
+                  number_employees:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: city
+        in: path
+        schema:
+          type: string
+      - name: zip
+        in: path
+        schema:
+          type: string
+      - name: radius
+        in: path
+        schema:
+          type: string
+      - name: supplier_id
+        in: path
+        schema:
+          type: string
+      - name: category_id
+        in: path
+        schema:
+          type: string
+      - name: categories
+        in: path
+        schema:
+          type: string
+      - name: certifier_id
+        in: path
+        schema:
+          type: string
+      - name: certifiers
+        in: path
+        schema:
+          type: string
+      - name: labels
+        in: path
+        schema:
+          type: string
+      - name: country_id
+        in: path
+        schema:
+          type: string
+      - name: countries
+        in: path
+        schema:
+          type: string
+      - name: certifications_types
+        in: path
+        schema:
+          type: string
+      - name: certification_types
+        in: path
+        schema:
+          type: string

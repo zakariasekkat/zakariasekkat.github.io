@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Admin Catalogues Item
+  version: v1.0.0
+paths:
+  /api/admin/catalogues/:catalogue_id/items:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                catalogue_item:
+                  type: object
+                  properties:
+                    product_id:
+                      type: string
+                    position:
+                      type: string

@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Product pricing
+  version: v1.0.0
+paths:
+  /api/dashboard/products/:product_id/variants/:variant_id/pricing:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                pricing:
+                  type: object
+                  properties:
+                    price:
+                      type: string
+                    min_count:
+                      type: string

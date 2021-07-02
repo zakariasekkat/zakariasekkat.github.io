@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Suppliers Tag
+  version: v1.0.0
+paths:
+  /api/admin/suppliers/:supplier_id/tags/:id:
+    delete:
+      summary: destroy  admin supplier tag

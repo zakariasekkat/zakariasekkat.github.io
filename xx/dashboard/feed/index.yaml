@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Feed
+  version: v1.0.0
+paths:
+  /api/dashboard/feed:
+    get:
+      summary: index  dashboard feed index
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  time:
+                    type: string
+                  event:
+                    type: string
+                  state:
+                    type: string
+      parameters:
+      - name: state
+        in: path
+        schema:
+          type: string

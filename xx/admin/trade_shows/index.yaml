@@ -1,0 +1,37 @@
+openapi: 3.0.0
+info:
+  title: Admin Trade show
+  version: v1.0.0
+paths:
+  /api/admin/trade_shows:
+    get:
+      summary: index  admin trade shows
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
+                  name_of_show_owner:
+                    type: string
+                  description:
+                    type: string
+                  cover_image:
+                    type: string
+                  start_at:
+                    type: string
+                  end_at:
+                    type: string
+      parameters:
+      - name: q
+        in: path
+        schema:
+          type: string
+      - name: state
+        in: path
+        schema:
+          type: string

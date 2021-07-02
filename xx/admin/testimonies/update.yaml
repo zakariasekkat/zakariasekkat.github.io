@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Admin Testimony
+  version: v1.0.0
+paths:
+  /api/admin/testimonies/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                testimony:
+                  type: object
+                  properties:
+                    author_avatar:
+                      type: string
+                    author_name:
+                      type: string
+                    author_status:
+                      type: string
+                    comment:
+                      type: string
+                    position:
+                      type: string

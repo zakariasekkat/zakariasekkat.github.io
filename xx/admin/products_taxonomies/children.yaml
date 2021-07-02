@@ -1,0 +1,24 @@
+openapi: 3.0.0
+info:
+  title: Admin Products taxonomy
+  version: v1.0.0
+paths:
+  /api/admin/products_taxonomies/:id/children:
+    get:
+      summary: children  children admin products taxonomy
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  ancestors:
+                    type: string
+                  leaf:
+                    type: string

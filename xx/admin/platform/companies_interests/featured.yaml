@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Companies interest
+  version: v1.0.0
+paths:
+  /api/admin/platform/companies_interests/:id/featured:
+    patch:
+      summary: featured  featured admin platform companies interest

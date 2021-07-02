@@ -1,0 +1,28 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Homepage
+  version: v1.0.0
+paths:
+  /api/dashboard/homepage/latest_webinars:
+    get:
+      summary: latest_webinars  latest webinars dashboard homepage index
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  start_at:
+                    type: string
+                  timezone:
+                    type: string
+                  name:
+                    type: string
+                  cover_image_url:
+                    type: string
+                  joined:
+                    type: string

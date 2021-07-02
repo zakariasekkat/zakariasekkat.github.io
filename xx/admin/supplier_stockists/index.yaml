@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Admin Supplier stockist
+  version: v1.0.0
+paths:
+  /api/admin/supplier_stockists:
+    get:
+      summary: index  admin supplier stockists
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  stockist_supplier:
+                    type: string
+                  supplier:
+                    type: string
+      parameters:
+      - name: stockist_supplier_id
+        in: path
+        schema:
+          type: string
+      - name: supplier_id
+        in: path
+        schema:
+          type: string

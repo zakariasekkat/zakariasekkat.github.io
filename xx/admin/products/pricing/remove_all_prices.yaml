@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Products Pricing
+  version: v1.0.0
+paths:
+  /api/admin/products/:product_id/pricing/remove_all_prices:
+    delete:
+      summary: remove_all_prices  remove all prices admin product pricing index

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Sourcing journey
+  version: v1.0.0
+paths:
+  /api/internal/sourcing_journeys/:id:
+    get:
+      summary: show  internal sourcing journey

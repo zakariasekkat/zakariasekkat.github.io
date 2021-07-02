@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Local association standard
+  version: v1.0.0
+paths:
+  /api/admin/local_association_standards/:id:
+    delete:
+      summary: destroy  admin local association standard

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Search
+  version: v1.0.0
+paths:
+  /api/internal/search:
+    get:
+      summary: show  internal search

@@ -1,0 +1,47 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Company website
+  version: v1.0.0
+paths:
+  /api/dashboard/company_websites:
+    post:
+      summary: create  
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  url:
+                    type: string
+                  visibility:
+                    type: string
+                  state:
+                    type: string
+                  kind:
+                    type: string
+                  position:
+                    type: string
+                  locales:
+                    type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                website:
+                  type: object
+                  properties:
+                    url:
+                      type: string
+                    visibility:
+                      type: string
+                    kind:
+                      type: string
+                    scheme:
+                      type: string

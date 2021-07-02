@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Dashboard User setting
+  version: v1.0.0
+paths:
+  /api/dashboard/user_settings:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user:
+                  type: object
+                  properties:
+                    locale:
+                      type: string
+                    default_currency:
+                      type: string

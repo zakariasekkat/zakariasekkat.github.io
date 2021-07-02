@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Data snapshot
+  version: v1.0.0
+paths:
+  /api/admin/platform/data_snapshots:
+    get:
+      summary: index  admin platform data snapshots
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  entities:
+                    type: string
+                  created_at:
+                    type: string
+                  updated_at:
+                    type: string
+      parameters:
+      
+        in: path
+        schema:
+          type: string

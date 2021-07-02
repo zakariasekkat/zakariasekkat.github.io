@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Auditors Medium
+  version: v1.0.0
+paths:
+  /api/admin/auditors/:auditor_id/media/:id:
+    delete:
+      summary: destroy  admin auditor medium

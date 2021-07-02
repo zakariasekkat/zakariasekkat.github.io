@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Internal Suppliers My appointment
+  version: v1.0.0
+paths:
+  /api/internal/suppliers/my_appointments:
+    get:
+      summary: index  internal suppliers my appointments
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  appointments:
+                    type: string
+      parameters:
+      - name: q
+        in: path
+        schema:
+          type: string

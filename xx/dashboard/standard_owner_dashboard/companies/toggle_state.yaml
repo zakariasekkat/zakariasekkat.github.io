@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Standard owner dashboard Company
+  version: v1.0.0
+paths:
+  /api/dashboard/certified_companies/:id/toggle_state:
+    put:
+      summary: toggle_state  toggle state dashboard certified company

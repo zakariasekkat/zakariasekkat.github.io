@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Admin Magazine
+  version: v1.0.0
+paths:
+  /api/admin/magazines:
+    get:
+      summary: index  admin magazines
+      parameters:
+      - name: q
+        in: path
+        schema:
+          type: string
+      - name: supplier_id
+        in: path
+        schema:
+          type: string
+      - name: category_id
+        in: path
+        schema:
+          type: string
+      - name: visibility
+        in: path
+        schema:
+          type: string
+      - name: state
+        in: path
+        schema:
+          type: string

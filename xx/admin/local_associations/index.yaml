@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Admin Local association
+  version: v1.0.0
+paths:
+  /api/admin/local_associations:
+    get:
+      summary: index  admin local associations
+      parameters:
+      - name: q
+        in: path
+        schema:
+          type: string
+      - name: country_id
+        in: path
+        schema:
+          type: string
+      - name: country_state_id
+        in: path
+        schema:
+          type: string
+      - name: country_state_city_id
+        in: path
+        schema:
+          type: string
+      - name: category_id
+        in: path
+        schema:
+          type: string
+      - name: state
+        in: path
+        schema:
+          type: string

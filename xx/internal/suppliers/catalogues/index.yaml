@@ -1,0 +1,65 @@
+openapi: 3.0.0
+info:
+  title: Internal Suppliers Catalogue
+  version: v1.0.0
+paths:
+  /api/internal/suppliers/:supplier_id/catalogues:
+    get:
+      summary: index  internal supplier catalogues
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  description:
+                    type: string
+                  visibility:
+                    type: string
+                  slug:
+                    type: string
+                  state:
+                    type: string
+                  cover_image_url:
+                    type: string
+                  supplier:
+                    type: string
+                  tags:
+                    type: string
+                  documents:
+                    type: string
+                  images:
+                    type: string
+                  videos:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: visibility
+        in: path
+        schema:
+          type: string
+      - name: supplier_id
+        in: path
+        schema:
+          type: string
+      - name: category_id
+        in: path
+        schema:
+          type: string
+      - name: tag_id
+        in: path
+        schema:
+          type: string
+      - name: label_id
+        in: path
+        schema:
+          type: string

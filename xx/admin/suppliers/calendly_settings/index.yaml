@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Suppliers Calendly setting
+  version: v1.0.0
+paths:
+  /api/admin/suppliers/:supplier_id/calendly_settings:
+    get:
+      summary: index  admin supplier calendly settings

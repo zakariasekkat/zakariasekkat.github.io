@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Transaction certificates File
+  version: v1.0.0
+paths:
+  /api/dashboard/certificates/transaction_certificates/:transaction_certificate_id/files/:id:
+    delete:
+      summary: destroy  dashboard certificates transaction certificate file

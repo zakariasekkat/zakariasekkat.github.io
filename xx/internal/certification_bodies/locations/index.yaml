@@ -1,0 +1,63 @@
+openapi: 3.0.0
+info:
+  title: Internal Certification bodies Location
+  version: v1.0.0
+paths:
+  /api/internal/certification_bodies/:certification_body_id/locations:
+    get:
+      summary: index  internal certification body locations
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  address_1:
+                    type: string
+                  address_2:
+                    type: string
+                  website:
+                    type: string
+                  phone:
+                    type: string
+                  email:
+                    type: string
+                  country:
+                    type: string
+                  region:
+                    type: string
+                  city:
+                    type: string
+                  postal_code:
+                    type: string
+                  lonlat:
+                    type: string
+      parameters:
+      - name: certification_body_id
+        in: path
+        schema:
+          type: string
+      - name: country_id
+        in: path
+        schema:
+          type: string
+      - name: country_state_id
+        in: path
+        schema:
+          type: string
+      - name: country_state_city_id
+        in: path
+        schema:
+          type: string
+      - name: country_postal_code_id
+        in: path
+        schema:
+          type: string
+      - name: with_geolocation
+        in: path
+        schema:
+          type: string

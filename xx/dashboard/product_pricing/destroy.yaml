@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Product pricing
+  version: v1.0.0
+paths:
+  /api/dashboard/products/:product_id/variants/:variant_id/pricing/:id:
+    delete:
+      summary: destroy

@@ -1,0 +1,20 @@
+openapi: 3.0.0
+info:
+  title: Admin Auditors Dictionary item
+  version: v1.0.0
+paths:
+  /api/admin/auditors/:auditor_id/dictionary_items:
+    get:
+      summary: index  admin auditor dictionary items
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  dictionary_item:
+                    type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Local associations Team member
+  version: v1.0.0
+paths:
+  /api/admin/local_associations/:local_association_id/team_members/:id:
+    get:
+      summary: show  admin local association team member

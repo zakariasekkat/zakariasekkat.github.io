@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Internal Buyers Interested category
+  version: v1.0.0
+paths:
+  /api/internal/buyers/interested_categories:
+    post:
+      summary: create  internal buyers interested categories
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                interested:
+                  type: object
+                  properties:
+                    category_id:
+                      type: string
+                    user_id:
+                      type: string

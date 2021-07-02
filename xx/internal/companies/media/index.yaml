@@ -1,0 +1,30 @@
+openapi: 3.0.0
+info:
+  title: Internal Companies Medium
+  version: v1.0.0
+paths:
+  /api/internal/companies/:company_id/media:
+    get:
+      summary: index  internal company media
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  kind:
+                    type: string
+                  position:
+                    type: string
+                  file:
+                    type: string
+                  media_data:
+                    type: string
+                  title:
+                    type: string
+                  is_main:
+                    type: string

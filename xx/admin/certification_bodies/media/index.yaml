@@ -1,0 +1,37 @@
+openapi: 3.0.0
+info:
+  title: Admin Certification bodies Medium
+  version: v1.0.0
+paths:
+  /api/admin/certification_bodies/:certification_body_id/media:
+    get:
+      summary: index  admin certification body media
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  kind:
+                    type: string
+                  position:
+                    type: string
+                  file:
+                    type: string
+                  media_data:
+                    type: string
+                  title:
+                    type: string
+      parameters:
+      - name: certification_body_id
+        in: path
+        schema:
+          type: string
+      - name: kind
+        in: path
+        schema:
+          type: string

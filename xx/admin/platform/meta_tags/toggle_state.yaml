@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Meta tag
+  version: v1.0.0
+paths:
+  /api/admin/platform/meta_tags/:id/toggle_state:
+    patch:
+      summary: toggle_state  toggle state admin platform meta tag

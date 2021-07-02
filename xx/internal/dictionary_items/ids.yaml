@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Dictionary item
+  version: v1.0.0
+paths:
+  /api/internal/dictionary_items/ids:
+    get:
+      summary: ids  ids internal dictionary items

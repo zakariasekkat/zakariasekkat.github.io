@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Scope certificate
+  version: v1.0.0
+paths:
+  /api/dashboard/certificates/scope_certificates:
+    get:
+      summary: index  dashboard certificates scope certificates
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  reference_number:
+                    type: string
+                  standard_name:
+                    type: string
+                  standard_id:
+                    type: string
+                  auditor_name:
+                    type: string
+                  auditor_id:
+                    type: string
+                  products_count:
+                    type: string
+                  state:
+                    type: string
+      parameters:
+      - name: q
+        in: path
+        schema:
+          type: string
+      - name: state
+        in: path
+        schema:
+          type: string

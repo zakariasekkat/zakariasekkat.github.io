@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Meta tag
+  version: v1.0.0
+paths:
+  /api/admin/platform/meta_tags:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                meta_tag:
+                  type: object
+                  properties:
+                    url:
+                      type: string
+                    title:
+                      type: string
+                    meta_subtitle:
+                      type: string
+                    meta_desc:
+                      type: string
+                    meta_keywords:
+                      type: string

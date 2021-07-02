@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Suppliers Standard
+  version: v1.0.0
+paths:
+  /api/internal/suppliers/:supplier_id/labels:
+    get:
+      summary: index  internal supplier labels

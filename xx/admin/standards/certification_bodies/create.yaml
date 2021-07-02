@@ -1,0 +1,63 @@
+openapi: 3.0.0
+info:
+  title: Admin Standards Certification body
+  version: v1.0.0
+paths:
+  /api/admin/standards/:standard_id/certification_bodies:
+    post:
+      summary: create  
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  location:
+                    type: string
+                  cover:
+                    type: string
+                  logo:
+                    type: string
+                  instagram_url:
+                    type: string
+                  facebook_url:
+                    type: string
+                  twitter_url:
+                    type: string
+                  about_description:
+                    type: string
+                  state:
+                    type: string
+                  sorting_score:
+                    type: string
+                  featured_in_search:
+                    type: string
+                  tagline:
+                    type: string
+                  website:
+                    type: string
+                  linkedin:
+                    type: string
+                  founded_in:
+                    type: string
+                  number_employees:
+                    type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                certification_body:
+                  type: object
+                  properties:
+                    certification_body_id:
+                      type: string
+                    standard_id:
+                      type: string

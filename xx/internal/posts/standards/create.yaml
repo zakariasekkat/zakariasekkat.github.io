@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Posts Standard
+  version: v1.0.0
+paths:
+  /api/dashboard/posts/:post_id/standards:
+    post:
+      summary: create

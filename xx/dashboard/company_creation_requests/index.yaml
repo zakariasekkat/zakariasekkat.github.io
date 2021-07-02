@@ -1,0 +1,35 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Company creation request
+  version: v1.0.0
+paths:
+  /api/dashboard/company_creation_requests:
+    get:
+      summary: index  dashboard company creation requests
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  message:
+                    type: string
+                  name:
+                    type: string
+                  phone_number:
+                    type: string
+                  website:
+                    type: string
+                  state:
+                    type: string
+                  country:
+                    type: string
+      parameters:
+      
+        in: path
+        schema:
+          type: string

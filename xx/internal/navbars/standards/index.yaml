@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Navbars Standard
+  version: v1.0.0
+paths:
+  /api/internal/navbars/standards:
+    get:
+      summary: index  internal navbars standards

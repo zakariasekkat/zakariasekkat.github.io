@@ -1,0 +1,63 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Company connection
+  version: v1.0.0
+paths:
+  /api/dashboard/connections:
+    get:
+      summary: index  dashboard connections
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  logo:
+                    type: string
+                  name:
+                    type: string
+                  country:
+                    type: string
+                  state:
+                    type: string
+                  kinds:
+                    type: string
+                  standards:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: tags
+        in: path
+        schema:
+          type: string
+      - name: sort_by_name
+        in: path
+        schema:
+          type: string
+      - name: country_id
+        in: path
+        schema:
+          type: string
+      - name: sort_by_country_id
+        in: path
+        schema:
+          type: string
+      - name: state
+        in: path
+        schema:
+          type: string
+      - name: sort_by_state
+        in: path
+        schema:
+          type: string
+      - name: kinds
+        in: path
+        schema:
+          type: string

@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Moderated guest lead
+  version: v1.0.0
+paths:
+  /api/internal/user_dashboard/moderated_guest_leads:
+    post:
+      summary: create  internal user dashboard moderated guest leads
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                moderated_guest_lead:
+                  type: object
+                  properties:
+                    message:
+                      type: string
+                    company_id:
+                      type: string

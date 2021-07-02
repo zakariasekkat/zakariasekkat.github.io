@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Companies Supply chain
+  version: v1.0.0
+paths:
+  /api/internal/companies/:company_id/supply_chains/countries:
+    get:
+      summary: countries  countries internal company supply chains

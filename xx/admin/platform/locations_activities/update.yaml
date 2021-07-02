@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Locations activity
+  version: v1.0.0
+paths:
+  /api/admin/platform/locations_activities/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                locations_activity:
+                  type: object
+                  properties:
+                    name:
+                      type: string

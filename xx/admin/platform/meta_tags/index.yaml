@@ -1,0 +1,67 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Meta tag
+  version: v1.0.0
+paths:
+  /api/admin/platform/meta_tags:
+    get:
+      summary: index  admin platform meta tags
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  title:
+                    type: string
+                  meta_subtitle:
+                    type: string
+                  meta_desc:
+                    type: string
+                  meta_keywords:
+                    type: string
+                  default:
+                    type: string
+                  host:
+                    type: string
+                  path:
+                    type: string
+                  state:
+                    type: string
+      parameters:
+      - name: url
+        in: path
+        schema:
+          type: string
+      - name: title
+        in: path
+        schema:
+          type: string
+      - name: meta_subtitle
+        in: path
+        schema:
+          type: string
+      - name: meta_desc
+        in: path
+        schema:
+          type: string
+      - name: meta_keywords
+        in: path
+        schema:
+          type: string
+      - name: default
+        in: path
+        schema:
+          type: string
+      - name: host
+        in: path
+        schema:
+          type: string
+      - name: path
+        in: path
+        schema:
+          type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Company creation request
+  version: v1.0.0
+paths:
+  /api/dashboard/company_creation_requests/:id:
+    delete:
+      summary: destroy  dashboard company creation request

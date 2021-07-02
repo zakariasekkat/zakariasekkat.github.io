@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Admin Products Pricing
+  version: v1.0.0
+paths:
+  /api/admin/products/:product_id/pricing:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                product_pricing:
+                  type: object
+                  properties:
+                    product_id:
+                      type: string
+                    price:
+                      type: string
+                    unit:
+                      type: string
+                    min_count:
+                      type: string

@@ -1,0 +1,30 @@
+openapi: 3.0.0
+info:
+  title: Internal Local page
+  version: v1.0.0
+paths:
+  /api/internal/local_pages/:country_id/:slug/tags:
+    get:
+      summary: tags  tags internal local page
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  position:
+                    type: string
+                  owner_id:
+                    type: string
+                  parent_id:
+                    type: string
+                  dictionary_id:
+                    type: string
+                  value:
+                    type: string

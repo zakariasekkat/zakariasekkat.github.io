@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Products Image
+  version: v1.0.0
+paths:
+  /api/admin/products/:product_id/images/:id/update_title:
+    patch:
+      summary: update_title  update title admin product image

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Navbars Supplier
+  version: v1.0.0
+paths:
+  /api/internal/navbars/suppliers:
+    get:
+      summary: index  internal navbars suppliers

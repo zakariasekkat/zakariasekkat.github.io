@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Image library
+  version: v1.0.0
+paths:
+  /api/admin/platform/image_libraries/:id/toggle_state:
+    patch:
+      summary: toggle_state  toggle state admin platform library

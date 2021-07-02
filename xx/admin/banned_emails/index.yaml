@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Admin Banned email
+  version: v1.0.0
+paths:
+  /api/admin/banned_emails:
+    get:
+      summary: index  admin banned emails
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  email:
+                    type: string
+                  request:
+                    type: string
+      parameters:
+      - name: email
+        in: path
+        schema:
+          type: string

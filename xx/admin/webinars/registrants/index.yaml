@@ -1,0 +1,13 @@
+openapi: 3.0.0
+info:
+  title: Admin Webinars Registrant
+  version: v1.0.0
+paths:
+  /api/admin/webinars/:webinar_id/registrants:
+    get:
+      summary: index  admin webinar registrants
+      parameters:
+      - name: webinar_id
+        in: path
+        schema:
+          type: string

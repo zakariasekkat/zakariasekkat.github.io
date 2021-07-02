@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Transaction certificates File
+  version: v1.0.0
+paths:
+  /api/dashboard/certificates/transaction_certificates/:transaction_certificate_id/files:
+    get:
+      summary: index  dashboard certificates transaction certificate files
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  state:
+                    type: string
+                  upload:
+                    type: string
+                  upload_content_type:
+                    type: string
+      parameters:
+      
+        in: path
+        schema:
+          type: string

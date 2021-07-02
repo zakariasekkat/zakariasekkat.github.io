@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: Admin Companies Subsidiary
+  version: v1.0.0
+paths:
+  /api/admin/companies/:company_id/subsidiaries:
+    get:
+      summary: index  admin company subsidiaries
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  logo:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: country_id
+        in: path
+        schema:
+          type: string
+      - name: state
+        in: path
+        schema:
+          type: string
+      - name: claimed
+        in: path
+        schema:
+          type: string

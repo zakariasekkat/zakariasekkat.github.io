@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Admin Post
+  version: v1.0.0
+paths:
+  /api/admin/posts/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                post:
+                  type: object
+                  properties:
+                    cover_photo_title:
+                      type: string
+                    cover_photo_alt:
+                      type: string
+                    cover_photo_description:
+                      type: string
+                    media_type:
+                      type: string
+                    owner_id:
+                      type: string
+                    highlight:
+                      type: string
+                    json_ld:
+                      type: string
+                    publish_at:
+                      type: string

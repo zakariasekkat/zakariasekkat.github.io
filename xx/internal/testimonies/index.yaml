@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: Internal Testimony
+  version: v1.0.0
+paths:
+  /api/internal/testimonies:
+    get:
+      summary: index  internal testimonies
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  author_avatar:
+                    type: string
+                  author_name:
+                    type: string
+                  author_status:
+                    type: string
+                  comment:
+                    type: string
+                  position:
+                    type: string
+      parameters:
+      - name: author_name
+        in: path
+        schema:
+          type: string
+      - name: author_status
+        in: path
+        schema:
+          type: string
+      - name: comment
+        in: path
+        schema:
+          type: string

@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Admin Dictionaries Item
+  version: v1.0.0
+paths:
+  /api/admin/dictionaries/items/:dictionary_key:
+    get:
+      summary: index  
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: dictionary_id
+        in: path
+        schema:
+          type: string
+      - name: dictionary_key
+        in: path
+        schema:
+          type: string
+      - name: certification_body_id
+        in: path
+        schema:
+          type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Product image
+  version: v1.0.0
+paths:
+  /api/dashboard/products/:product_id/variants/:variant_id/images/:product_image_id/set_main:
+    patch:
+      summary: set_main  dashboard product variant product image set main

@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Admin Magazine
+  version: v1.0.0
+paths:
+  /api/admin/magazines:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                magazine:
+                  type: object
+                  properties:
+                    category_id:
+                      type: string
+                    name:
+                      type: string
+                    description:
+                      type: string
+                    cover_image:
+                      type: string
+                    visibility:
+                      type: string
+                    tag_ids:
+                      type: string
+                    supplier_ids:
+                      type: string

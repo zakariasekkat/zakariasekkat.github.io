@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Admin Auditors Standard
+  version: v1.0.0
+paths:
+  /api/admin/auditors/:auditor_id/standards:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                standards_auditor:
+                  type: object
+                  properties:
+                    auditor_id:
+                      type: string
+                    standard_id:
+                      type: string

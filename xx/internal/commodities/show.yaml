@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Commodity
+  version: v1.0.0
+paths:
+  /api/internal/commodities/:id:
+    get:
+      summary: show  internal commodity

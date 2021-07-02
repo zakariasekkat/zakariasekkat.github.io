@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Admin Local associations Team member
+  version: v1.0.0
+paths:
+  /api/admin/local_associations/:local_association_id/team_members/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                team_member:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    avatar:
+                      type: string
+                    role_id:
+                      type: string
+                    email:
+                      type: string
+                    phone:
+                      type: string

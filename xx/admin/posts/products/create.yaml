@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Admin Posts Product
+  version: v1.0.0
+paths:
+  /api/admin/posts/:post_id/products:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                product:
+                  type: object
+                  properties:
+                    product_id:
+                      type: string
+                    post_id:
+                      type: string

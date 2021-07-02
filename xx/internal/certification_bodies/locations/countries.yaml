@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Certification bodies Location
+  version: v1.0.0
+paths:
+  /api/internal/certification_bodies/:certification_body_id/locations/countries:
+    get:
+      summary: countries  countries internal certification body locations

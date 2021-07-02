@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin
+  version: v1.0.0
+paths:
+  /admin_cs/login:
+    get:
+      summary: login

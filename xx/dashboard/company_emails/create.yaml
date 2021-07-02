@@ -1,0 +1,47 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Company email
+  version: v1.0.0
+paths:
+  /api/dashboard/company_emails:
+    post:
+      summary: create  
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  label:
+                    type: string
+                  email:
+                    type: string
+                  kind:
+                    type: string
+                  visibility:
+                    type: string
+                  locales:
+                    type: string
+                  platform_notifications:
+                    type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: object
+                  properties:
+                    email:
+                      type: string
+                    label:
+                      type: string
+                    kind:
+                      type: string
+                    visibility:
+                      type: string
+                    platform_notifications:
+                      type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Trade shows Sponsor
+  version: v1.0.0
+paths:
+  /api/admin/trade_shows/:trade_show_id/sponsors/:id:
+    delete:
+      summary: destroy  admin trade show sponsor

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Order request
+  version: v1.0.0
+paths:
+  /api/admin/order_requests/:id/moderate:
+    patch:
+      summary: moderate  moderate admin order request

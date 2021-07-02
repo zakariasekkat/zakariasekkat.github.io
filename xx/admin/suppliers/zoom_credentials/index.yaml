@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Suppliers Zoom credential
+  version: v1.0.0
+paths:
+  /api/admin/suppliers/:supplier_id/zoom_credentials:
+    get:
+      summary: index  admin supplier zoom credentials

@@ -1,0 +1,45 @@
+openapi: 3.0.0
+info:
+  title: Admin Order request
+  version: v1.0.0
+paths:
+  /api/admin/order_requests:
+    get:
+      summary: index  admin order requests
+      parameters:
+      - name: reference
+        in: path
+        schema:
+          type: string
+      - name: company_name
+        in: path
+        schema:
+          type: string
+      - name: company_id
+        in: path
+        schema:
+          type: string
+      - name: supplier_id
+        in: path
+        schema:
+          type: string
+      - name: state
+        in: path
+        schema:
+          type: string
+      - name: sort_by_user_name
+        in: path
+        schema:
+          type: string
+      - name: sort_by_supplier_name
+        in: path
+        schema:
+          type: string
+      - name: sort_by_created_at
+        in: path
+        schema:
+          type: string
+      - name: sort_by_state
+        in: path
+        schema:
+          type: string

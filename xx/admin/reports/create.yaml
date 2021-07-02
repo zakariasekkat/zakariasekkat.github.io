@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Admin Report
+  version: v1.0.0
+paths:
+  /api/admin/reports:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                report:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    publish_date:
+                      type: string
+                    description:
+                      type: string
+                    upload:
+                      type: string
+                    cover_image:
+                      type: string
+                    company_id:
+                      type: string

@@ -1,0 +1,75 @@
+openapi: 3.0.0
+info:
+  title: Internal Dashboard Posts Product
+  version: v1.0.0
+paths:
+  /api/internal/dashboard/posts/:post_id/products:
+    get:
+      summary: index  internal dashboard post products
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  logo:
+                    type: string
+                  name:
+                    type: string
+      parameters:
+      - name: category_id
+        in: path
+        schema:
+          type: string
+      - name: labels
+        in: path
+        schema:
+          type: string
+      - name: categories
+        in: path
+        schema:
+          type: string
+      - name: search
+        in: path
+        schema:
+          type: string
+      - name: supplier_id
+        in: path
+        schema:
+          type: string
+      - name: certification_body_id
+        in: path
+        schema:
+          type: string
+      - name: auditors
+        in: path
+        schema:
+          type: string
+      - name: certifications_types
+        in: path
+        schema:
+          type: string
+      - name: has_sample
+        in: path
+        schema:
+          type: string
+      - name: availability
+        in: path
+        schema:
+          type: string
+      - name: availability_option
+        in: path
+        schema:
+          type: string
+      - name: tags_item_ids
+        in: path
+        schema:
+          type: string
+      - name: country_id
+        in: path
+        schema:
+          type: string

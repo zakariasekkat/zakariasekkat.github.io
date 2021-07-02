@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Products Auditor
+  version: v1.0.0
+paths:
+  /api/admin/products/:product_id/certifiers/:id:
+    delete:
+      summary: destroy  admin product auditor

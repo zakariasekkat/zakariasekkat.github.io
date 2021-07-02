@@ -1,0 +1,51 @@
+openapi: 3.0.0
+info:
+  title: Internal Favorite product
+  version: v1.0.0
+paths:
+  /api/internal/favorite_products:
+    post:
+      summary: create  internal favorite products
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  image:
+                    type: string
+                  web_path:
+                    type: string
+                  variants:
+                    type: string
+                  standards:
+                    type: string
+                  name:
+                    type: string
+                  msrp:
+                    type: string
+                  bulk_pricing:
+                    type: string
+                  country:
+                    type: string
+                  availability:
+                    type: string
+                  availability_option:
+                    type: string
+                  supplier:
+                    type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                favorite_product:
+                  type: object
+                  properties:
+                    product_id:
+                      type: string
+                    company_id:
+                      type: string

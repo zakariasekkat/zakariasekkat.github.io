@@ -1,0 +1,36 @@
+openapi: 3.0.0
+info:
+  title: Internal Local page
+  version: v1.0.0
+paths:
+  /api/internal/local_pages/:country_id/:slug/suppliers:
+    get:
+      summary: suppliers  suppliers internal local page
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  slug:
+                    type: string
+                  cover:
+                    type: string
+                  logo:
+                    type: string
+                  name:
+                    type: string
+                  has_logo:
+                    type: string
+                  marketplace_id:
+                    type: string
+                  standards:
+                    type: string
+                  default_location:
+                    type: string
+                  is_favorite:
+                    type: string

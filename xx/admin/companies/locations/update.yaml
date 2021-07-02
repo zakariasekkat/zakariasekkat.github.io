@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: Admin Companies Location
+  version: v1.0.0
+paths:
+  /api/admin/companies/:company_id/locations/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                location:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    country_id:
+                      type: string
+                    region_id:
+                      type: string
+                    city_id:
+                      type: string
+                    postal_code_id:
+                      type: string
+                    phone:
+                      type: string
+                    address_1:
+                      type: string
+                    address_2:
+                      type: string
+                    email:
+                      type: string
+                    position:
+                      type: string
+                    activity_ids:
+                      type: string

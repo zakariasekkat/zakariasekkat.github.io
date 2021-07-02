@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Scope certificate
+  version: v1.0.0
+paths:
+  /api/dashboard/certificates/scope_certificates/:id:
+    delete:
+      summary: destroy

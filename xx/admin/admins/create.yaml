@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Admin Admin
+  version: v1.0.0
+paths:
+  /api/admin/admins:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                admin:
+                  type: object
+                  properties:
+                    role:
+                      type: string
+                    email:
+                      type: string
+                    first_name:
+                      type: string
+                    last_name:
+                      type: string
+                    password:
+                      type: string
+                    avatar_title:
+                      type: string
+                    avatar_alt:
+                      type: string
+                    avatar_description:
+                      type: string

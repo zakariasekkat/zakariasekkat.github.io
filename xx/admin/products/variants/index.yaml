@@ -1,0 +1,99 @@
+openapi: 3.0.0
+info:
+  title: Admin Products Variant
+  version: v1.0.0
+paths:
+  /api/admin/products/:product_id/variants:
+    get:
+      summary: index  admin product variants
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  state:
+                    type: string
+                  sku:
+                    type: string
+                  country:
+                    type: string
+                  supplier_name:
+                    type: string
+                  image:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: label_ids
+        in: path
+        schema:
+          type: string
+      - name: category_id
+        in: path
+        schema:
+          type: string
+      - name: labels
+        in: path
+        schema:
+          type: string
+      - name: categories
+        in: path
+        schema:
+          type: string
+      - name: search
+        in: path
+        schema:
+          type: string
+      - name: supplier_id
+        in: path
+        schema:
+          type: string
+      - name: certification_body_id
+        in: path
+        schema:
+          type: string
+      - name: country_id
+        in: path
+        schema:
+          type: string
+      - name: auditors
+        in: path
+        schema:
+          type: string
+      - name: certifications_types
+        in: path
+        schema:
+          type: string
+      - name: has_sample
+        in: path
+        schema:
+          type: string
+      - name: availability
+        in: path
+        schema:
+          type: string
+      - name: sell_type
+        in: path
+        schema:
+          type: string
+      - name: local_page_id
+        in: path
+        schema:
+          type: string
+      - name: product_id
+        in: path
+        schema:
+          type: string
+      - name: variants_of
+        in: path
+        schema:
+          type: string

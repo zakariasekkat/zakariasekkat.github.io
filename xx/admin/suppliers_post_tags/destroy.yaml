@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Suppliers post tag
+  version: v1.0.0
+paths:
+  /api/admin/suppliers_post_tags/:id:
+    delete:
+      summary: destroy  admin suppliers post tag

@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Company invitation
+  version: v1.0.0
+paths:
+  /api/dashboard/company_invitations/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                invite:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    role:
+                      type: string

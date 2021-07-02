@@ -1,0 +1,53 @@
+openapi: 3.0.0
+info:
+  title: Admin Posts Local page
+  version: v1.0.0
+paths:
+  /api/admin/posts/:post_id/local_pages:
+    get:
+      summary: index  admin post local pages
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  state:
+                    type: string
+                  slug:
+                    type: string
+                  location:
+                    type: string
+                  companies_count:
+                    type: string
+      parameters:
+      - name: title
+        in: path
+        schema:
+          type: string
+      - name: is_sponsored
+        in: path
+        schema:
+          type: string
+      - name: category_id
+        in: path
+        schema:
+          type: string
+      - name: tags_item_ids
+        in: path
+        schema:
+          type: string
+      - name: label_id
+        in: path
+        schema:
+          type: string
+      - name: sort_by
+        in: path
+        schema:
+          type: string

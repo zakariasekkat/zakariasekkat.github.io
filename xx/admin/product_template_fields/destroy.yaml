@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Product template field
+  version: v1.0.0
+paths:
+  /api/admin/product_templates/:product_template_id/fields/:id:
+    delete:
+      summary: destroy

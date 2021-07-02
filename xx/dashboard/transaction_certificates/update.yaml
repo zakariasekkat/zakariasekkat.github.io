@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Transaction certificate
+  version: v1.0.0
+paths:
+  /api/dashboard/certificates/transaction_certificates/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                certificate:
+                  type: object
+                  properties:
+                    certificate_state:
+                      type: string
+                    certified_weight_kg:
+                      type: string
+                    gross_weight_kg:
+                      type: string
+                    issued_on:
+                      type: string
+                    net_weight_kg:
+                      type: string
+                    destination_country_id:
+                      type: string
+                    dispatch_country_id:
+                      type: string
+                    reference_number:
+                      type: string

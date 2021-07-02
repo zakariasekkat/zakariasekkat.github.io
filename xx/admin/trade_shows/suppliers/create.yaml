@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Admin Trade shows Supplier
+  version: v1.0.0
+paths:
+  /api/admin/trade_shows/:trade_show_id/suppliers:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                trade_show_supplier:
+                  type: object
+                  properties:
+                    trade_show_id:
+                      type: string
+                    supplier_id:
+                      type: string
+                    position:
+                      type: string

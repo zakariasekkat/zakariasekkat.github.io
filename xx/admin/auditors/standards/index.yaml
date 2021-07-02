@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Admin Auditors Standard
+  version: v1.0.0
+paths:
+  /api/admin/auditors/:auditor_id/standards:
+    get:
+      summary: index  admin auditor standards
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  standard:
+                    type: string
+      parameters:
+      - name: certifier_id
+        in: path
+        schema:
+          type: string
+      - name: label_id
+        in: path
+        schema:
+          type: string

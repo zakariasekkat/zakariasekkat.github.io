@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Category
+  version: v1.0.0
+paths:
+  /api/admin/categories/:id/parents:
+    get:
+      summary: parents  parents admin category

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Home
+  version: v1.0.0
+paths:
+  /suppliers/:country_id/postal_codes/:postal_code:
+    get:
+      summary: suppliers_by_pc

@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  title: Admin Post tag
+  version: v1.0.0
+paths:
+  /api/admin/post_tags:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                tag:
+                  type: object
+                  properties:
+                    title:
+                      type: string

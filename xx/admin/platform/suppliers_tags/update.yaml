@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Suppliers tag
+  version: v1.0.0
+paths:
+  /api/admin/platform/suppliers_tags/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                suppliers_tag:
+                  type: object
+                  properties:
+                    name:
+                      type: string

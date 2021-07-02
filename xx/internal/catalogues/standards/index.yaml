@@ -1,0 +1,187 @@
+openapi: 3.0.0
+info:
+  title: Internal Catalogues Standard
+  version: v1.0.0
+paths:
+  /api/internal/catalogues/:catalogue_id/standards:
+    get:
+      summary: index  internal catalogue standards
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  logo:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: include_in_search
+        in: path
+        schema:
+          type: string
+      - name: certification_body_id
+        in: path
+        schema:
+          type: string
+      - name: auditors
+        in: path
+        schema:
+          type: string
+      - name: categories
+        in: path
+        schema:
+          type: string
+      - name: certifications_types
+        in: path
+        schema:
+          type: string
+      - name: has_suppliers
+        in: path
+        schema:
+          type: string
+      - name: has_auditors
+        in: path
+        schema:
+          type: string
+      - name: has_certification_bodies
+        in: path
+        schema:
+          type: string
+      - name: company_id
+        in: path
+        schema:
+          type: string
+      - name: order_by_name
+        in: path
+        schema:
+          type: string
+      - name: local_page_id
+        in: path
+        schema:
+          type: string
+      - name: label_ids
+        in: path
+        schema:
+          type: string
+      - name: has_products
+        in: path
+        schema:
+          type: string
+      - name: standards_ids
+        in: path
+        schema:
+          type: string
+      - name: product_has_category_id
+        in: path
+        schema:
+          type: string
+      - name: product_has_search
+        in: path
+        schema:
+          type: string
+      - name: product_has_supplier_id
+        in: path
+        schema:
+          type: string
+      - name: product_has_country_id
+        in: path
+        schema:
+          type: string
+      - name: product_has_country_state_city_id
+        in: path
+        schema:
+          type: string
+      - name: product_has_country_state_id
+        in: path
+        schema:
+          type: string
+      - name: product_has_auditors
+        in: path
+        schema:
+          type: string
+      - name: product_has_certifications_types
+        in: path
+        schema:
+          type: string
+      - name: product_has_sample
+        in: path
+        schema:
+          type: string
+      - name: product_has_availability
+        in: path
+        schema:
+          type: string
+      - name: product_has_certification_body_id
+        in: path
+        schema:
+          type: string
+      - name: certifier_has_name
+        in: path
+        schema:
+          type: string
+      - name: certifier_has_category_id
+        in: path
+        schema:
+          type: string
+      - name: certifier_has_city
+        in: path
+        schema:
+          type: string
+      - name: certifier_has_supplier_id
+        in: path
+        schema:
+          type: string
+      - name: certifier_has_country_id
+        in: path
+        schema:
+          type: string
+      - name: certifier_has_has_suppliers
+        in: path
+        schema:
+          type: string
+      - name: certifier_has_certifications_types
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_name
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_city
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_supplier_id
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_certifier_id
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_labels
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_country_id
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_certifications_types
+        in: path
+        schema:
+          type: string
+      - name: tags_item_ids
+        in: path
+        schema:
+          type: string

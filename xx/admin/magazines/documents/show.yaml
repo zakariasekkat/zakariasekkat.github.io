@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Magazines Document
+  version: v1.0.0
+paths:
+  /api/admin/magazines/:magazine_id/documents/:id:
+    get:
+      summary: show  admin magazine document

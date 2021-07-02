@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Facilities Email
+  version: v1.0.0
+paths:
+  /api/dashboard/facilities/:facility_id/emails:
+    get:
+      summary: index  dashboard facility emails
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  email:
+                    type: string
+                  kind:
+                    type: string
+                  state:
+                    type: string
+      parameters:
+      
+        in: path
+        schema:
+          type: string

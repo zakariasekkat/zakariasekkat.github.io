@@ -1,0 +1,28 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Auditor dashboard Standard
+  version: v1.0.0
+paths:
+  /api/dashboard/managed_standards:
+    get:
+      summary: index  
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  web_path:
+                    type: string
+                  name:
+                    type: string
+                  logo:
+                    type: string
+                  cover:
+                    type: string
+                  certification_types:
+                    type: string

@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Admin Products Standard
+  version: v1.0.0
+paths:
+  /api/admin/products/:product_id/standards/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                label:
+                  type: object
+                  properties:
+                    product_id:
+                      type: string
+                    standard_id:
+                      type: string
+                    number:
+                      type: string
+                    certified_at:
+                      type: string
+                    expire_at:
+                      type: string
+                    certificate_pdf:
+                      type: string
+                    auditor_id:
+                      type: string

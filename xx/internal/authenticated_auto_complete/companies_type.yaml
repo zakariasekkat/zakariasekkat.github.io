@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Authenticated auto complete
+  version: v1.0.0
+paths:
+  /api/internal/autocompletes/companies_type:
+    get:
+      summary: companies_type  companies type internal authenticated auto complete index

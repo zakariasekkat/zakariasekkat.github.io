@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Settings Company
+  version: v1.0.0
+paths:
+  /api/internal/settings/companies/default_system_unit:
+    patch:
+      summary: default_system_unit  default system unit internal settings companies

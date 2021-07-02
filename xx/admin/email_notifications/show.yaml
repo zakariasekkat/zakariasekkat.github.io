@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Email notification
+  version: v1.0.0
+paths:
+  /api/admin/email_notifications/:id:
+    get:
+      summary: show  admin email notification

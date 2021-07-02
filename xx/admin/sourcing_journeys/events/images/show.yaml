@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Sourcing journeys Events Image
+  version: v1.0.0
+paths:
+  /api/admin/sourcing_journeys/:sourcing_journey_id/events/:event_id/images/:id:
+    get:
+      summary: show  admin sourcing journey event image

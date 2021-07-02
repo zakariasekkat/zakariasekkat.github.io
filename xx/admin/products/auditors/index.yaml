@@ -1,0 +1,95 @@
+openapi: 3.0.0
+info:
+  title: Admin Products Auditor
+  version: v1.0.0
+paths:
+  /api/admin/products/:product_id/certifiers:
+    get:
+      summary: index  admin product auditors
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  slug:
+                    type: string
+                  web_path:
+                    type: string
+                  name:
+                    type: string
+                  postal_code:
+                    type: string
+                  province:
+                    type: string
+                  street_address_1:
+                    type: string
+                  street_address_2:
+                    type: string
+                  website:
+                    type: string
+                  country_id:
+                    type: string
+                  country:
+                    type: string
+                  country_name:
+                    type: string
+                  city:
+                    type: string
+                  logo:
+                    type: string
+                  cover:
+                    type: string
+                  has_logo:
+                    type: string
+                  tagline:
+                    type: string
+                  founded_in:
+                    type: string
+                  number_employees:
+                    type: string
+                  is_favorite:
+                    type: string
+                  abbreviation:
+                    type: string
+                  sorting_score:
+                    type: string
+                  featured_in_search:
+                    type: string
+                  phone_number:
+                    type: string
+                  twitter:
+                    type: string
+                  facebook:
+                    type: string
+                  instagram:
+                    type: string
+                  linkedin:
+                    type: string
+                  state:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: state
+        in: path
+        schema:
+          type: string
+      - name: labels
+        in: path
+        schema:
+          type: string
+      - name: certifications_types
+        in: path
+        schema:
+          type: string
+      - name: certification_body_id
+        in: path
+        schema:
+          type: string

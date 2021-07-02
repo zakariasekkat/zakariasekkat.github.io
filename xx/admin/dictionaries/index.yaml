@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Admin Dictionary
+  version: v1.0.0
+paths:
+  /api/admin/dictionaries:
+    get:
+      summary: index  admin dictionaries
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  key:
+                    type: string
+                  description:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string

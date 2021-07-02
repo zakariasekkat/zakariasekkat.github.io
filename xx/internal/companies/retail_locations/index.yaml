@@ -1,0 +1,65 @@
+openapi: 3.0.0
+info:
+  title: Internal Companies Retail location
+  version: v1.0.0
+paths:
+  /api/internal/companies/:company_id/retail_locations:
+    get:
+      summary: index  internal company retail locations
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  country:
+                    type: string
+                  region:
+                    type: string
+                  city:
+                    type: string
+                  postal_code:
+                    type: string
+                  address_1:
+                    type: string
+                  address_2:
+                    type: string
+                  lonlat:
+                    type: string
+                  linked_supplier_id:
+                    type: string
+      parameters:
+      - name: company_id
+        in: path
+        schema:
+          type: string
+      - name: country_id
+        in: path
+        schema:
+          type: string
+      - name: country_state_id
+        in: path
+        schema:
+          type: string
+      - name: country_state_city_id
+        in: path
+        schema:
+          type: string
+      - name: country_postal_code_id
+        in: path
+        schema:
+          type: string
+      - name: with_geolocation
+        in: path
+        schema:
+          type: string
+      - name: name
+        in: path
+        schema:
+          type: string

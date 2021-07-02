@@ -1,0 +1,24 @@
+openapi: 3.0.0
+info:
+  title: Admin Item
+  version: v1.0.0
+paths:
+  /api/admin/items/by_dictionary_key:
+    get:
+      summary: by_dictionary_key  admin items by dictionary key
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  value:
+                    type: string
+                  dictionary_id:
+                    type: string

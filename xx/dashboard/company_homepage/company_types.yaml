@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Company homepage
+  version: v1.0.0
+paths:
+  /api/dashboard/homepage/company_types:
+    get:
+      summary: company_types  company types dashboard company homepage index

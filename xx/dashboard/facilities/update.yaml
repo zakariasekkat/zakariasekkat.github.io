@@ -1,0 +1,55 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Facility
+  version: v1.0.0
+paths:
+  /api/dashboard/facilities/:id:
+    put:
+      summary: update  
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  position:
+                    type: string
+                  state:
+                    type: string
+                  to_address:
+                    type: string
+                  visiblitity:
+                    type: string
+                  geo_located:
+                    type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                facility:
+                  type: object
+                  properties:
+                    address_1:
+                      type: string
+                    address_2:
+                      type: string
+                    name:
+                      type: string
+                    postal_code_text:
+                      type: string
+                    roles:
+                      type: string
+                    city_id:
+                      type: string
+                    region_id:
+                      type: string
+                    visibility:
+                      type: string

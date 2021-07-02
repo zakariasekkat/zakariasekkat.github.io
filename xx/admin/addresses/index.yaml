@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  title: Admin Address
+  version: v1.0.0
+paths:
+  /api/admin/addresses:
+    get:
+      summary: index  admin addresses
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  address_1:
+                    type: string
+                  address_2:
+                    type: string
+                  city:
+                    type: string
+                  code:
+                    type: string
+                  name:
+                    type: string
+                  phone:
+                    type: string
+                  primary:
+                    type: string
+                  shipping:
+                    type: string
+                  state:
+                    type: string
+                  title:
+                    type: string
+                  zip:
+                    type: string
+                  country:
+                    type: string
+                  country_region:
+                    type: string
+      parameters:
+      - name: company_id
+        in: path
+        schema:
+          type: string

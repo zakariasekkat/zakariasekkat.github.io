@@ -1,0 +1,40 @@
+openapi: 3.0.0
+info:
+  title: Admin Auditors Location
+  version: v1.0.0
+paths:
+  /api/admin/auditors/:auditor_id/locations/:id:
+    delete:
+      summary: destroy  
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  country:
+                    type: string
+                  region:
+                    type: string
+                  city:
+                    type: string
+                  postal_code:
+                    type: string
+                  address_1:
+                    type: string
+                  address_2:
+                    type: string
+                  website:
+                    type: string
+                  email:
+                    type: string
+                  phone:
+                    type: string
+                  lonlat:
+                    type: string
+                  position:
+                    type: string

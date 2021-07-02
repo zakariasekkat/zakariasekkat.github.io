@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: Admin Webinar
+  version: v1.0.0
+paths:
+  /api/admin/webinars:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                webinar:
+                  type: object
+                  properties:
+                    kind:
+                      type: string
+                    category_id:
+                      type: string
+                    theme_id:
+                      type: string
+                    seats_count:
+                      type: string
+                    name:
+                      type: string
+                    description:
+                      type: string
+                    cover_image:
+                      type: string
+                    start_at:
+                      type: string
+                    end_at:
+                      type: string
+                    trade_show_id:
+                      type: string
+                    pre_recorded:
+                      type: string
+                    pre_recorded_embed_code:
+                      type: string

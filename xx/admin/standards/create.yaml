@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Admin Standard
+  version: v1.0.0
+paths:
+  /api/admin/standards:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                label:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    kind:
+                      type: string

@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Admin Trade shows Sponsor
+  version: v1.0.0
+paths:
+  /api/admin/trade_shows/:trade_show_id/sponsors:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                trade_show_sponsor:
+                  type: object
+                  properties:
+                    trade_show_id:
+                      type: string
+                    sponsor_id:
+                      type: string
+                    position:
+                      type: string

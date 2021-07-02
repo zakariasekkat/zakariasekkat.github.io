@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Companies Filter
+  version: v1.0.0
+paths:
+  /api/internal/companies/filters/interests/ids:
+    get:
+      summary: interests_ids

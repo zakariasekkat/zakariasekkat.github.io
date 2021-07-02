@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Seo Sitemap
+  version: v1.0.0
+paths:
+  /api/admin/platform/seo/sitemap:
+    get:
+      summary: index  admin platform seo sitemap index
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  compressed:
+                    type: string
+                  context:
+                    type: string
+                  default_host:
+                    type: string
+                  filesize:
+                    type: string
+                  link_count:
+                    type: string
+                  name:
+                    type: string
+                  search_engines:
+                    type: string
+                  state:
+                    type: string
+                  updated_at:
+                    type: string
+      parameters:
+      
+        in: path
+        schema:
+          type: string

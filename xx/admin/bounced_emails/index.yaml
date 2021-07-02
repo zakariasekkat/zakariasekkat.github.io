@@ -1,0 +1,59 @@
+openapi: 3.0.0
+info:
+  title: Admin Bounced email
+  version: v1.0.0
+paths:
+  /api/admin/bounced_emails:
+    get:
+      summary: index  admin bounced emails
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  email:
+                    type: string
+                  bounce_type:
+                    type: string
+                  bounce_sub_type:
+                    type: string
+                  reporting_mta:
+                    type: string
+                  event_timestamp:
+                    type: string
+                  feedback_id:
+                    type: string
+                  remote_mta_ip:
+                    type: string
+                  provider:
+                    type: string
+      parameters:
+      - name: email
+        in: path
+        schema:
+          type: string
+      - name: bounce_type
+        in: path
+        schema:
+          type: string
+      - name: bounce_sub_type
+        in: path
+        schema:
+          type: string
+      - name: reporting_mta
+        in: path
+        schema:
+          type: string
+      - name: feedback_id
+        in: path
+        schema:
+          type: string
+      - name: provider
+        in: path
+        schema:
+          type: string

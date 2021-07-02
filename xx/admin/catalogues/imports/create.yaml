@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  title: Admin Catalogues Import
+  version: v1.0.0
+paths:
+  /api/admin/catalogues/imports:
+    post:
+      summary: create  admin imports
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                :
+                  type: object
+                  properties:
+                    file:
+                      type: string

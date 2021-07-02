@@ -1,0 +1,75 @@
+openapi: 3.0.0
+info:
+  title: Internal Local association
+  version: v1.0.0
+paths:
+  /api/internal/local_associations:
+    get:
+      summary: index  internal local associations
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  slug:
+                    type: string
+                  country:
+                    type: string
+                  country_region:
+                    type: string
+                  city:
+                    type: string
+                  logo:
+                    type: string
+                  cover_image:
+                    type: string
+                  website:
+                    type: string
+                  facebook_url:
+                    type: string
+                  twitter_url:
+                    type: string
+                  instagram_url:
+                    type: string
+                  pinterest_url:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: country_id
+        in: path
+        schema:
+          type: string
+      - name: country_state_id
+        in: path
+        schema:
+          type: string
+      - name: country_state_city_id
+        in: path
+        schema:
+          type: string
+      - name: category_id
+        in: path
+        schema:
+          type: string
+      - name: label_id
+        in: path
+        schema:
+          type: string
+      - name: tag_id
+        in: path
+        schema:
+          type: string
+      - name: tags_item_ids
+        in: path
+        schema:
+          type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Dashboards Child
+  version: v1.0.0
+paths:
+  /api/admin/dashboards/:dashboard_id/children/:id:
+    delete:
+      summary: destroy

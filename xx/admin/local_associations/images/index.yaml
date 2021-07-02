@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Local associations Image
+  version: v1.0.0
+paths:
+  /api/admin/local_associations/:local_association_id/images:
+    get:
+      summary: index  admin local association images

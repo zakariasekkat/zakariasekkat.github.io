@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Companies Retail location
+  version: v1.0.0
+paths:
+  /api/internal/companies/:company_id/retail_locations/map:
+    get:
+      summary: geo_map  map internal company retail locations

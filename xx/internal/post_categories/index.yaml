@@ -1,0 +1,37 @@
+openapi: 3.0.0
+info:
+  title: Internal Post category
+  version: v1.0.0
+paths:
+  /api/internal/blogs/categories:
+    get:
+      summary: index  internal categories
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  title:
+                    type: string
+                  slug:
+                    type: string
+                  description:
+                    type: string
+                  cover:
+                    type: string
+                  image:
+                    type: string
+      parameters:
+      - name: context
+        in: path
+        schema:
+          type: string
+      - name: title
+        in: path
+        schema:
+          type: string

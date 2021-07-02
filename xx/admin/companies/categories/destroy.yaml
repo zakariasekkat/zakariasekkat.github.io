@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Companies Category
+  version: v1.0.0
+paths:
+  /api/admin/companies/:company_id/categories/:id:
+    delete:
+      summary: destroy

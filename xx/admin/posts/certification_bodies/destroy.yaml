@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Posts Certification body
+  version: v1.0.0
+paths:
+  /api/admin/posts/:post_id/certification_bodies/:id:
+    delete:
+      summary: destroy  admin post certification body

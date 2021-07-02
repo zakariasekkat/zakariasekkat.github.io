@@ -1,0 +1,26 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Standard owner dashboard Auditor
+  version: v1.0.0
+paths:
+  /api/dashboard/managed_auditors:
+    get:
+      summary: index  dashboard managed auditors
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  logo:
+                    type: string
+                  country:
+                    type: string
+                  state:
+                    type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Internal product
+  version: v1.0.0
+paths:
+  /api/dashboard/internal_products/:id:
+    get:
+      summary: show  dashboard internal product

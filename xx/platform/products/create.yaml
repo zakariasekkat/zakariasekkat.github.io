@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Platform Product
+  version: v1.0.0
+paths:
+  /api/platform/suppliers/:supplier_id/products:
+    post:
+      summary: create  platform supplier products

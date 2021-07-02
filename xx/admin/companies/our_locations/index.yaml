@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: Admin Companies Our location
+  version: v1.0.0
+paths:
+  /api/admin/companies/:company_id/our_locations:
+    get:
+      summary: index  admin company our locations
+      parameters:
+      - name: company_id
+        in: path
+        schema:
+          type: string
+      - name: kind
+        in: path
+        schema:
+          type: string

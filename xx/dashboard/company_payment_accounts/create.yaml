@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Company payment account
+  version: v1.0.0
+paths:
+  /api/dashboard/company_payment_accounts:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                account:
+                  type: object
+                  properties:
+                    label:
+                      type: string
+                    provider_id:
+                      type: string
+                    currency_id:
+                      type: string

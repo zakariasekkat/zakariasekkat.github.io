@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Post
+  version: v1.0.0
+paths:
+  /api/internal/dashboard/posts:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                post:
+                  type: object
+                  properties:
+                    cover_photo:
+                      type: string
+                    title:
+                      type: string
+                    subtitle:
+                      type: string
+                    body:
+                      type: string

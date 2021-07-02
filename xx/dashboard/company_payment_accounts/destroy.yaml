@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Company payment account
+  version: v1.0.0
+paths:
+  /api/dashboard/company_payment_accounts/:id:
+    delete:
+      summary: destroy  dashboard company payment account

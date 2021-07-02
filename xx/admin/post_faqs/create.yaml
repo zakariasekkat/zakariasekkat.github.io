@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Admin Post faq
+  version: v1.0.0
+paths:
+  /api/admin/post_faqs:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                post_faq:
+                  type: object
+                  properties:
+                    question:
+                      type: string
+                    answer:
+                      type: string
+                    position:
+                      type: string
+                    post_id:
+                      type: string

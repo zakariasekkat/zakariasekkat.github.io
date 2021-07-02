@@ -1,0 +1,51 @@
+openapi: 3.0.0
+info:
+  title: Admin Certification bodies Company
+  version: v1.0.0
+paths:
+  /api/admin/certification_bodies/:certification_body_id/companies:
+    get:
+      summary: index  admin certification body companies
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  featured_in_search:
+                    type: string
+                  company_type:
+                    type: string
+                  state:
+                    type: string
+                  users_count:
+                    type: string
+                  claimed:
+                    type: string
+                  logo:
+                    type: string
+                  country:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: country_id
+        in: path
+        schema:
+          type: string
+      - name: state
+        in: path
+        schema:
+          type: string
+      - name: claimed
+        in: path
+        schema:
+          type: string

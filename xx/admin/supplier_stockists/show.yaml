@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Supplier stockist
+  version: v1.0.0
+paths:
+  /api/admin/supplier_stockists/:id:
+    get:
+      summary: show  admin supplier stockist

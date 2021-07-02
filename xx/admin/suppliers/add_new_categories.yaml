@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Supplier
+  version: v1.0.0
+paths:
+  /api/admin/suppliers/add_new_categories:
+    patch:
+      summary: add_new_categories  add new categories admin suppliers

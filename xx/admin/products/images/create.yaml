@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  title: Admin Products Image
+  version: v1.0.0
+paths:
+  /api/admin/products/:product_id/images:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                product_image:
+                  type: object
+                  properties:
+                    file:
+                      type: string

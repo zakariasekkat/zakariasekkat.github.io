@@ -1,0 +1,32 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Product variant
+  version: v1.0.0
+paths:
+  /api/dashboard/products/:product_id/variants:
+    get:
+      summary: index  dashboard product variants
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  main_image:
+                    type: string
+                  name:
+                    type: string
+                  sku:
+                    type: string
+                  supplier_sku:
+                    type: string
+                  state:
+                    type: string
+                  availability:
+                    type: string
+                  updated_at:
+                    type: string

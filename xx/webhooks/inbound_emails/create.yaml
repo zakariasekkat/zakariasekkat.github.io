@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Webhooks Inbound email
+  version: v1.0.0
+paths:
+  /api/webhooks/inbound_emails:
+    post:
+      summary: create  webhooks inbound emails

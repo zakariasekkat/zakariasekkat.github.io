@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Suppliers served area
+  version: v1.0.0
+paths:
+  /api/admin/suppliers_served_areas/:id:
+    delete:
+      summary: destroy  admin suppliers served area

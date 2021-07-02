@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Internal Suppliers Zoom credential
+  version: v1.0.0
+paths:
+  /api/internal/suppliers/zoom_credentials:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                zoom_credential:
+                  type: object
+                  properties:
+                    api_key:
+                      type: string
+                    secret_key:
+                      type: string
+                    enable:
+                      type: string

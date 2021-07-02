@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  title: Admin Catalogues Image
+  version: v1.0.0
+paths:
+  /api/admin/catalogues/:catalogue_id/images/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                catalogue_image:
+                  type: object
+                  properties:
+                    name:
+                      type: string

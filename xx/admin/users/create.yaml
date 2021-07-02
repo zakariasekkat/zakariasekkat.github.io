@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Admin User
+  version: v1.0.0
+paths:
+  /api/admin/users:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    email:
+                      type: string
+                    password:
+                      type: string

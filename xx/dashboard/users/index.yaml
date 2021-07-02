@@ -1,0 +1,13 @@
+openapi: 3.0.0
+info:
+  title: Dashboard User
+  version: v1.0.0
+paths:
+  /api/dashboard/users:
+    get:
+      summary: index  dashboard users
+      parameters:
+      
+        in: path
+        schema:
+          type: string

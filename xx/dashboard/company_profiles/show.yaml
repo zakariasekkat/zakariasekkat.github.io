@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Company profile
+  version: v1.0.0
+paths:
+  /api/dashboard/company_profile:
+    get:
+      summary: show  dashboard company profile

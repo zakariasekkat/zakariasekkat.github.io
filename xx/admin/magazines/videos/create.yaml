@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Admin Magazines Video
+  version: v1.0.0
+paths:
+  /api/admin/magazines/:magazine_id/videos:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                magazine_video:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    video_url:
+                      type: string

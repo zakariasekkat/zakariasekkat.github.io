@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Admin Suppliers Review
+  version: v1.0.0
+paths:
+  /api/admin/suppliers/:supplier_id/reviews:
+    post:
+      summary: create  admin supplier reviews
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                supplier_review:
+                  type: object
+                  properties:
+                    supplier_id:
+                      type: string
+                    company_id:
+                      type: string
+                    user_id:
+                      type: string
+                    kind:
+                      type: string
+                    review:
+                      type: string
+                    score:
+                      type: string

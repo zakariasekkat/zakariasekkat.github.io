@@ -1,0 +1,36 @@
+openapi: 3.0.0
+info:
+  title: Internal Supplier Companies Location
+  version: v1.0.0
+paths:
+  /api/internal/supplier/companies/:company_id/locations/map:
+    get:
+      summary: geo_map  map internal supplier company locations
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  country:
+                    type: string
+                  region:
+                    type: string
+                  city:
+                    type: string
+                  postal_code:
+                    type: string
+                  address_1:
+                    type: string
+                  address_2:
+                    type: string
+                  email:
+                    type: string
+                  phone:
+                    type: string
+                  lonlat:
+                    type: string

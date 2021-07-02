@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Admin Report actor
+  version: v1.0.0
+paths:
+  /api/admin/report_actors:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                report_actor:
+                  type: object
+                  properties:
+                    value:
+                      type: string
+                    report_id:
+                      type: string
+                    dictionary_item_id:
+                      type: string

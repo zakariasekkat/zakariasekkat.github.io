@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Product standard
+  version: v1.0.0
+paths:
+  /api/dashboard/products/:product_id/variants/:variant_id/standards:
+    get:
+      summary: index  dashboard product variant product standards
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  certificate_pdf:
+                    type: string
+                  certified_at:
+                    type: string
+                  expire_at:
+                    type: string
+                  state:
+                    type: string
+                  number:
+                    type: string
+                  standard:
+                    type: string
+                  product:
+                    type: string
+                  auditor:
+                    type: string
+      parameters:
+      
+        in: path
+        schema:
+          type: string

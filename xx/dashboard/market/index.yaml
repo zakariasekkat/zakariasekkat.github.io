@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Market
+  version: v1.0.0
+paths:
+  /api/dashboard/market:
+    get:
+      summary: index  dashboard market index

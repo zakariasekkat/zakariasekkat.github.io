@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Dashboard User social network
+  version: v1.0.0
+paths:
+  /api/dashboard/user_social_networks:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                social_profile:
+                  type: object
+                  properties:
+                    network:
+                      type: string
+                    profile:
+                      type: string
+                    verified:
+                      type: string

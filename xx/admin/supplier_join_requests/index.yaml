@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: Admin Supplier join request
+  version: v1.0.0
+paths:
+  /api/admin/supplier_join_requests:
+    get:
+      summary: index  admin supplier join requests
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  status:
+                    type: string
+                  created_at:
+                    type: string
+                  country:
+                    type: string
+                  company_type:
+                    type: string
+                  company_industry:
+                    type: string
+                  working_with_agents:
+                    type: string
+                  registration_fee_plan:
+                    type: string
+                  company:
+                    type: string
+                  user:
+                    type: string
+      parameters:
+      
+        in: path
+        schema:
+          type: string

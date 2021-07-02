@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Admin Suppliers post tag
+  version: v1.0.0
+paths:
+  /api/admin/suppliers_post_tags:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                suppliers_post_tag:
+                  type: object
+                  properties:
+                    post_tag_id:
+                      type: string
+                    supplier_id:
+                      type: string

@@ -1,0 +1,28 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Company connections Note
+  version: v1.0.0
+paths:
+  /api/dashboard/connections/:connection_id/notes/:id:
+    get:
+      summary: show  dashboard connection note
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  title:
+                    type: string
+                  markdown_area:
+                    type: string
+                  body:
+                    type: string
+                  user_id:
+                    type: string
+                  user_name:
+                    type: string

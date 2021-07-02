@@ -1,0 +1,26 @@
+openapi: 3.0.0
+info:
+  title: Internal Auditor
+  version: v1.0.0
+paths:
+  /api/internal/auditors/:id/media:
+    get:
+      summary: media  media internal auditor
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  file:
+                    type: string
+                  kind:
+                    type: string
+                  media_data:
+                    type: string
+                  title:
+                    type: string

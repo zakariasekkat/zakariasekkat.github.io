@@ -1,0 +1,20 @@
+openapi: 3.0.0
+info:
+  title: Internal Commodity
+  version: v1.0.0
+paths:
+  /api/internal/commodities/:id/images:
+    get:
+      summary: images  images internal commodity
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  file:
+                    type: string

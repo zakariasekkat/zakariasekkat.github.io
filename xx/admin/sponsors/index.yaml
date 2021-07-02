@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Admin Sponsor
+  version: v1.0.0
+paths:
+  /api/admin/sponsors:
+    get:
+      summary: index  admin sponsors
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  description:
+                    type: string
+                  website:
+                    type: string
+                  logo_url:
+                    type: string
+      parameters:
+      - name: q
+        in: path
+        schema:
+          type: string

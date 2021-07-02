@@ -1,0 +1,42 @@
+openapi: 3.0.0
+info:
+  title: Internal Standard
+  version: v1.0.0
+paths:
+  /api/internal/standards/:id/products:
+    get:
+      summary: products  products internal standard
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  state:
+                    type: string
+                  name:
+                    type: string
+                  category_name:
+                    type: string
+                  supplier_name:
+                    type: string
+                  labels_count:
+                    type: string
+                  availability:
+                    type: string
+                  availability_option:
+                    type: string
+                  currency:
+                    type: string
+                  unit:
+                    type: string
+                  minimum_purchase:
+                    type: string
+                  standards:
+                    type: string
+                  image:
+                    type: string

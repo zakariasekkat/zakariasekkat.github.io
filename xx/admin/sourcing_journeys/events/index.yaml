@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Sourcing journeys Event
+  version: v1.0.0
+paths:
+  /api/admin/sourcing_journeys/:sourcing_journey_id/events:
+    get:
+      summary: index  admin sourcing journey events

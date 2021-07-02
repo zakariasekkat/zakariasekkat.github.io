@@ -1,0 +1,53 @@
+openapi: 3.0.0
+info:
+  title: Admin Country
+  version: v1.0.0
+paths:
+  /api/admin/countries:
+    get:
+      summary: index  admin countries
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  iso3:
+                    type: string
+                  emoji:
+                    type: string
+                  emojiu:
+                    type: string
+                  region_label:
+                    type: string
+                  cities_count:
+                    type: string
+                  regions_count:
+                    type: string
+                  postal_codes_count:
+                    type: string
+                  certifiers_count:
+                    type: string
+                  certification_body_infos_count:
+                    type: string
+                  suppliers_count:
+                    type: string
+                  enabled_suppliers_count:
+                    type: string
+                  enabled_labels_count:
+                    type: string
+                  enabled_products_count:
+                    type: string
+                  data_quality:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string

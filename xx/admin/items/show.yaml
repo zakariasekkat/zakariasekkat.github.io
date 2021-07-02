@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Item
+  version: v1.0.0
+paths:
+  /api/admin/dictionaries/:dictionary_id/items/:id:
+    get:
+      summary: show  admin dictionary item

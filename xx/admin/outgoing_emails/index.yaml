@@ -1,0 +1,103 @@
+openapi: 3.0.0
+info:
+  title: Admin Outgoing email
+  version: v1.0.0
+paths:
+  /api/admin/outgoing_emails:
+    get:
+      summary: index  admin outgoing emails
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  mailer_name:
+                    type: string
+                  mailer_action:
+                    type: string
+                  subject:
+                    type: string
+                  to_email:
+                    type: string
+                  headers:
+                    type: string
+                  raw_message:
+                    type: string
+                  html_message:
+                    type: string
+                  text_message:
+                    type: string
+                  state:
+                    type: string
+                  dispatched_at:
+                    type: string
+                  read_at:
+                    type: string
+                  mail_id:
+                    type: string
+                  reply_to:
+                    type: string
+                  bcc:
+                    type: string
+                  cc:
+                    type: string
+                  mta:
+                    type: string
+                  delivery_state:
+                    type: string
+                  delivered_at:
+                    type: string
+      parameters:
+      - name: mailer_name
+        in: path
+        schema:
+          type: string
+      - name: mailer_action
+        in: path
+        schema:
+          type: string
+      - name: subject
+        in: path
+        schema:
+          type: string
+      - name: raw_message
+        in: path
+        schema:
+          type: string
+      - name: html_message
+        in: path
+        schema:
+          type: string
+      - name: text_message
+        in: path
+        schema:
+          type: string
+      - name: state
+        in: path
+        schema:
+          type: string
+      - name: read_at
+        in: path
+        schema:
+          type: string
+      - name: mail_id
+        in: path
+        schema:
+          type: string
+      - name: reply_to
+        in: path
+        schema:
+          type: string
+      - name: mta
+        in: path
+        schema:
+          type: string
+      - name: delivery_state
+        in: path
+        schema:
+          type: string

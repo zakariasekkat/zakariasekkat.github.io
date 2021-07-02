@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: Internal Trade shows Autocomplete
+  version: v1.0.0
+paths:
+  /api/internal/trade_shows/autocompletes/webinars:
+    get:
+      summary: webinars  webinars internal trade shows autocompletes
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  cover_image_url:
+                    type: string

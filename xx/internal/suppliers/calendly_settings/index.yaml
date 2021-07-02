@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Suppliers Calendly setting
+  version: v1.0.0
+paths:
+  /api/internal/suppliers/calendly_settings:
+    get:
+      summary: index  internal suppliers calendly settings

@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Internal Buyers Product inquiry
+  version: v1.0.0
+paths:
+  /api/internal/buyers/product_inquiries:
+    post:
+      summary: create  internal buyers product inquiries
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                product_inquiry:
+                  type: object
+                  properties:
+                    kind:
+                      type: string
+                    quantity:
+                      type: string
+                    product_id:
+                      type: string

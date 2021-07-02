@@ -1,0 +1,36 @@
+openapi: 3.0.0
+info:
+  title: Internal Blog
+  version: v1.0.0
+paths:
+  /api/internal/blogs/highlights:
+    get:
+      summary: highlights  highlights internal blogs
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  featured:
+                    type: string
+                  title:
+                    type: string
+                  subtitle:
+                    type: string
+                  published_at:
+                    type: string
+                  web_path:
+                    type: string
+                  cover_photo:
+                    type: string
+                  author_name:
+                    type: string
+                  author_avatar:
+                    type: string
+                  categories:
+                    type: string

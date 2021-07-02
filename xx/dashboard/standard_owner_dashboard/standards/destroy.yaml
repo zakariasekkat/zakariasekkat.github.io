@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Standard owner dashboard Standard
+  version: v1.0.0
+paths:
+  /api/dashboard/managed_standards/:id:
+    delete:
+      summary: destroy  dashboard managed standard

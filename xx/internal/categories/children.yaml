@@ -1,0 +1,62 @@
+openapi: 3.0.0
+info:
+  title: Internal Category
+  version: v1.0.0
+paths:
+  /api/internal/categories/:id/children:
+    get:
+      summary: children  children internal category
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  slug:
+                    type: string
+                  name:
+                    type: string
+                  cover:
+                    type: string
+                  logo:
+                    type: string
+                  parent_id:
+                    type: string
+                  ancestors:
+                    type: string
+                  status_text:
+                    type: string
+                  state:
+                    type: string
+                  has_children:
+                    type: string
+                  suppliers_count:
+                    type: string
+                  certifiers_count:
+                    type: string
+                  labels_count:
+                    type: string
+                  post_tag:
+                    type: string
+                  template:
+                    type: string
+                  products_count:
+                    type: string
+                  certification_bodies_count:
+                    type: string
+                  cover_title:
+                    type: string
+                  cover_alt:
+                    type: string
+                  cover_description:
+                    type: string
+                  logo_title:
+                    type: string
+                  logo_alt:
+                    type: string
+                  logo_description:
+                    type: string

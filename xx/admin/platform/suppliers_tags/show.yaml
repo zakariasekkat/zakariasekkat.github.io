@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Suppliers tag
+  version: v1.0.0
+paths:
+  /api/admin/platform/suppliers_tags/:id:
+    get:
+      summary: show  admin platform suppliers tag

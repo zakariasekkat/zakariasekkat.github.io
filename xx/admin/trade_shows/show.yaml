@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Trade show
+  version: v1.0.0
+paths:
+  /api/admin/trade_shows/:id:
+    get:
+      summary: show  admin trade show

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Locations activity
+  version: v1.0.0
+paths:
+  /api/admin/platform/locations_activities/:id:
+    get:
+      summary: show  admin platform locations activity

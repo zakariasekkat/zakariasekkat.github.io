@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  title: Admin Trade show
+  version: v1.0.0
+paths:
+  /api/admin/trade_shows:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                trade_show:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    platform_connector:
+                      type: string
+                    name:
+                      type: string
+                    description:
+                      type: string
+                    name_of_show_owner:
+                      type: string
+                    domain:
+                      type: string
+                    start_at:
+                      type: string
+                    end_at:
+                      type: string
+                    cover_image:
+                      type: string
+                    logo:
+                      type: string
+                    trade_show_post:
+                      type: string
+                    all_posts:
+                      type: string
+                    particular_categories:
+                      type: string
+                    zoom_credential:
+                      type: string
+                    api_key:
+                      type: string
+                    secret_key:
+                      type: string

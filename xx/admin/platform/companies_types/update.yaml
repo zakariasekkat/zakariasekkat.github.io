@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Companies type
+  version: v1.0.0
+paths:
+  /api/admin/platform/companies_types/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                companies_type:
+                  type: object
+                  properties:
+                    position:
+                      type: string

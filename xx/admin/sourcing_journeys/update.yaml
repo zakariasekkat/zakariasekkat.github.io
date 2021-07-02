@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Admin Sourcing journey
+  version: v1.0.0
+paths:
+  /api/admin/sourcing_journeys/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                sourcing_journey:
+                  type: object
+                  properties:
+                    state:
+                      type: string
+                    name:
+                      type: string

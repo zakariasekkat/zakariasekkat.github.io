@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Conversations Message
+  version: v1.0.0
+paths:
+  /api/internal/companies/conversations/:conversation_id/messages:
+    post:
+      summary: create  internal companies conversation messages
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: object
+                  properties:
+                    body:
+                      type: string
+                    contact_id:
+                      type: string
+                    file:
+                      type: string

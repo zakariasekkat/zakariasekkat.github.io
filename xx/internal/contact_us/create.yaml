@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Internal Contact u
+  version: v1.0.0
+paths:
+  /api/internal/contact_us:
+    post:
+      summary: create  internal contact us
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                contact_us:
+                  type: object
+                  properties:
+                    first_name:
+                      type: string
+                    company_name:
+                      type: string
+                    email:
+                      type: string
+                    phone:
+                      type: string
+                    message:
+                      type: string

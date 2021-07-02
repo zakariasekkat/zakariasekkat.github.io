@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Internal Supplier join request
+  version: v1.0.0
+paths:
+  /api/internal/suppliers/:id/join-team:
+    post:
+      summary: create  join team internal supplier
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                :
+                  type: object
+                  properties:
+                    country_id:
+                      type: string
+                    user_id:
+                      type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Company subscription
+  version: v1.0.0
+paths:
+  /api/admin/company_subscriptions/:id/approve:
+    patch:
+      summary: approve  approve admin company subscription

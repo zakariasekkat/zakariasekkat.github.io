@@ -1,0 +1,37 @@
+openapi: 3.0.0
+info:
+  title: Internal Buyer
+  version: v1.0.0
+paths:
+  /api/internal/buyers:
+    get:
+      summary: index  internal buyers
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  web_path:
+                    type: string
+                  logo:
+                    type: string
+                  cover:
+                    type: string
+                  location:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: country_id
+        in: path
+        schema:
+          type: string

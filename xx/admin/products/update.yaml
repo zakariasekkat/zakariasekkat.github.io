@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: Admin Product
+  version: v1.0.0
+paths:
+  /api/admin/products/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                product:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    standard_ids:
+                      type: string
+                    supplier_sku:
+                      type: string
+                    country_id:
+                      type: string
+                    description:
+                      type: string
+                    availability:
+                      type: string
+                    availability_option:
+                      type: string
+                    unit:
+                      type: string
+                    minimum_purchase:
+                      type: string
+                    currency:
+                      type: string
+                    sell_type:
+                      type: string

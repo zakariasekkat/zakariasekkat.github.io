@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Navbars Local page
+  version: v1.0.0
+paths:
+  /api/internal/navbars/local_pages:
+    get:
+      summary: index  internal navbars local pages

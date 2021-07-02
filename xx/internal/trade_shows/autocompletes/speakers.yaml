@@ -1,0 +1,24 @@
+openapi: 3.0.0
+info:
+  title: Internal Trade shows Autocomplete
+  version: v1.0.0
+paths:
+  /api/internal/trade_shows/autocompletes/speakers:
+    get:
+      summary: speakers  speakers internal trade shows autocompletes
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  full_name:
+                    type: string
+                  company_name:
+                    type: string
+                  avatar_url:
+                    type: string

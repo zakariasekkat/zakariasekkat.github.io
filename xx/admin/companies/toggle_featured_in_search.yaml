@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Company
+  version: v1.0.0
+paths:
+  /api/admin/companies/:id/toggle_featured_in_search:
+    patch:
+      summary: toggle_featured_in_search  toggle featured in search admin company

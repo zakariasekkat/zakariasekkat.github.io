@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal User Confirmation
+  version: v1.0.0
+paths:
+  /api/internal/resend_confirmation_email:
+    post:
+      summary: resend_confirmation_email  internal resend confirmation email

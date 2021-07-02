@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Admin Suppliers Certification type
+  version: v1.0.0
+paths:
+  /api/admin/suppliers/:supplier_id/certification_types:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                type:
+                  type: object
+                  properties:
+                    dictionary_item_id:
+                      type: string
+                    supplier_id:
+                      type: string

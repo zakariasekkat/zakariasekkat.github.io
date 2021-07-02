@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Dashboard User profile
+  version: v1.0.0
+paths:
+  /api/dashboard/user_profile:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    avatar:
+                      type: string

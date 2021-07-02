@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Internal Companies Industry
+  version: v1.0.0
+paths:
+  /api/internal/companies/industries:
+    get:
+      summary: index  internal companies industries
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  industry:
+                    type: string
+      parameters:
+      - name: industry
+        in: path
+        schema:
+          type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Commodities Image
+  version: v1.0.0
+paths:
+  /api/admin/commodities/:commodity_id/images/:id/set_main:
+    patch:
+      summary: set_main  set main admin commodity image

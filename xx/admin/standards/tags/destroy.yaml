@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Standards Tag
+  version: v1.0.0
+paths:
+  /api/admin/standards/:standard_id/tags/:id:
+    delete:
+      summary: destroy  admin standard tag

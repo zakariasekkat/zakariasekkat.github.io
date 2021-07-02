@@ -1,0 +1,20 @@
+openapi: 3.0.0
+info:
+  title: Admin Email notification
+  version: v1.0.0
+paths:
+  /api/admin/email_notifications:
+    get:
+      summary: index  admin email notifications
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  path:
+                    type: string
+                  code:
+                    type: string

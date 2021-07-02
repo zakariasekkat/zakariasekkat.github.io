@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Admin Registration fees Plan
+  version: v1.0.0
+paths:
+  /api/admin/registration_fees/:registration_fee_id/plans/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                registration_fee_plan:
+                  type: object
+                  properties:
+                    title:
+                      type: string
+                    price:
+                      type: string
+                    commission_rate:
+                      type: string
+                    position:
+                      type: string

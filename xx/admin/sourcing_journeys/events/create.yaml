@@ -1,0 +1,37 @@
+openapi: 3.0.0
+info:
+  title: Admin Sourcing journeys Event
+  version: v1.0.0
+paths:
+  /api/admin/sourcing_journeys/:sourcing_journey_id/events:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                sourcing_journey_event:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    company_type_id:
+                      type: string
+                    company_id:
+                      type: string
+                    kind:
+                      type: string
+                    product_id:
+                      type: string
+                    product_name:
+                      type: string
+                    product_description:
+                      type: string
+                    position:
+                      type: string
+                    sourcing_journey_id:
+                      type: string
+                    file:
+                      type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Post
+  version: v1.0.0
+paths:
+  /api/dashboard/posts/:id/review:
+    patch:
+      summary: review  review dashboard post

@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: Admin Standards Company
+  version: v1.0.0
+paths:
+  /api/admin/standards/:standard_id/companies:
+    get:
+      summary: index  admin standard companies
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  logo:
+                    type: string
+      parameters:
+      - name: country_id
+        in: path
+        schema:
+          type: string
+      - name: country_state_id
+        in: path
+        schema:
+          type: string
+      - name: with_geolocation
+        in: path
+        schema:
+          type: string
+      - name: company_name
+        in: path
+        schema:
+          type: string

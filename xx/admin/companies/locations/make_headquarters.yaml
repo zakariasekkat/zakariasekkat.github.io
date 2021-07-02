@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Companies Location
+  version: v1.0.0
+paths:
+  /api/admin/companies/:company_id/locations/:id/make_headquarters:
+    put:
+      summary: make_headquarters  make headquarters admin company location

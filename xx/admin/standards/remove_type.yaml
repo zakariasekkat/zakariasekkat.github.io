@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Standard
+  version: v1.0.0
+paths:
+  /api/admin/standards/:id/remove_type/:type_id:
+    delete:
+      summary: remove_type

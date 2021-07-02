@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: User Confirmation
+  version: v1.0.0
+paths:
+  /api/user/confirmation:
+    get:
+      summary: show  user confirmation

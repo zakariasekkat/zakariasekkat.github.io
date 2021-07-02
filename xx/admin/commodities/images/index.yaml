@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: Admin Commodities Image
+  version: v1.0.0
+paths:
+  /api/admin/commodities/:commodity_id/images:
+    get:
+      summary: index  admin commodity images
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  file:
+                    type: string
+                  position:
+                    type: string
+                  state:
+                    type: string
+                  original_content_type:
+                    type: string
+                  original_filename:
+                    type: string
+                  original_filesize:
+                    type: string
+      parameters:
+      - name: state
+        in: path
+        schema:
+          type: string
+      - name: commodity_id
+        in: path
+        schema:
+          type: string

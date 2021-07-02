@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Supplier label certification
+  version: v1.0.0
+paths:
+  /api/admin/companies/:company_id/standards/:standard_id/certifications/:id:
+    delete:
+      summary: destroy

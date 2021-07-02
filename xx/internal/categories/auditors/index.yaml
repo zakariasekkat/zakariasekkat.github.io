@@ -1,0 +1,137 @@
+openapi: 3.0.0
+info:
+  title: Internal Categories Auditor
+  version: v1.0.0
+paths:
+  /api/internal/categories/:category_id/auditors:
+    get:
+      summary: index  internal category auditors
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  slug:
+                    type: string
+                  web_path:
+                    type: string
+                  name:
+                    type: string
+                  postal_code:
+                    type: string
+                  province:
+                    type: string
+                  street_address_1:
+                    type: string
+                  street_address_2:
+                    type: string
+                  website:
+                    type: string
+                  country_id:
+                    type: string
+                  country:
+                    type: string
+                  country_name:
+                    type: string
+                  city:
+                    type: string
+                  logo:
+                    type: string
+                  cover:
+                    type: string
+                  has_logo:
+                    type: string
+                  tagline:
+                    type: string
+                  founded_in:
+                    type: string
+                  number_employees:
+                    type: string
+                  is_favorite:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: category_id
+        in: path
+        schema:
+          type: string
+      - name: label_ids
+        in: path
+        schema:
+          type: string
+      - name: city
+        in: path
+        schema:
+          type: string
+      - name: supplier_id
+        in: path
+        schema:
+          type: string
+      - name: country_id
+        in: path
+        schema:
+          type: string
+      - name: has_suppliers
+        in: path
+        schema:
+          type: string
+      - name: certifications_types
+        in: path
+        schema:
+          type: string
+      - name: certificationTypes
+        in: path
+        schema:
+          type: string
+      - name: order_by_name
+        in: path
+        schema:
+          type: string
+      - name: auditors_ids
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_name
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_city
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_supplier_id
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_certifier_id
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_labels
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_country_id
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_certifications_types
+        in: path
+        schema:
+          type: string
+      - name: certification_body_has_categories
+        in: path
+        schema:
+          type: string
+      - name: tags_item_ids
+        in: path
+        schema:
+          type: string

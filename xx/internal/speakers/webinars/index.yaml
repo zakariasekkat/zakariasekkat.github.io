@@ -1,0 +1,69 @@
+openapi: 3.0.0
+info:
+  title: Internal Speakers Webinar
+  version: v1.0.0
+paths:
+  /api/internal/speakers/:speaker_id/webinars:
+    get:
+      summary: index  internal speaker webinars
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  kind:
+                    type: string
+                  category:
+                    type: string
+                  seats_count:
+                    type: string
+                  start_at:
+                    type: string
+                  start_at_time_ago_to_now:
+                    type: string
+                  end_at:
+                    type: string
+                  timezone:
+                    type: string
+                  name:
+                    type: string
+                  description:
+                    type: string
+                  cover_image_url:
+                    type: string
+                  state:
+                    type: string
+                  joined:
+                    type: string
+                  speakers:
+                    type: string
+      parameters:
+      - name: webinar_name
+        in: path
+        schema:
+          type: string
+      - name: speaker_name
+        in: path
+        schema:
+          type: string
+      - name: webinar_state
+        in: path
+        schema:
+          type: string
+      - name: theme_id
+        in: path
+        schema:
+          type: string
+      - name: category_id
+        in: path
+        schema:
+          type: string
+      - name: q
+        in: path
+        schema:
+          type: string

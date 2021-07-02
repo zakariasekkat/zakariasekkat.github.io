@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Company connection
+  version: v1.0.0
+paths:
+  /api/dashboard/connections/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                node:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    contact_name:
+                      type: string
+                    email:
+                      type: string
+                    is_client:
+                      type: string
+                    is_service_provider:
+                      type: string
+                    is_supplier:
+                      type: string
+                    is_subsidiary:
+                      type: string
+                    is_competitor:
+                      type: string
+                    is_lead:
+                      type: string
+                    visible:
+                      type: string
+                    kind_visible:
+                      type: string

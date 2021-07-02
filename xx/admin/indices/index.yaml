@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Index
+  version: v1.0.0
+paths:
+  /api/admin/indices:
+    get:
+      summary: index  admin indices

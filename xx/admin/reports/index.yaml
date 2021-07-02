@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: Admin Report
+  version: v1.0.0
+paths:
+  /api/admin/reports:
+    get:
+      summary: index  admin reports
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  publish_date:
+                    type: string
+                  description:
+                    type: string
+                  upload:
+                    type: string
+                  cover_image:
+                    type: string
+                  company:
+                    type: string
+                  actors:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: company_id
+        in: path
+        schema:
+          type: string

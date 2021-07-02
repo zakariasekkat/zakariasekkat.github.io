@@ -1,0 +1,83 @@
+openapi: 3.0.0
+info:
+  title: Admin Incoming email
+  version: v1.0.0
+paths:
+  /api/admin/incoming_emails:
+    get:
+      summary: index  admin incoming emails
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  event_time:
+                    type: string
+                  from_email:
+                    type: string
+                  from_name:
+                    type: string
+                  headers:
+                    type: string
+                  raw_message:
+                    type: string
+                  html_message:
+                    type: string
+                  text_message:
+                    type: string
+                  subject:
+                    type: string
+                  to_email:
+                    type: string
+                  email_received:
+                    type: string
+                  state:
+                    type: string
+                  clean_message:
+                    type: string
+      parameters:
+      - name: from_email
+        in: path
+        schema:
+          type: string
+      - name: from_name
+        in: path
+        schema:
+          type: string
+      - name: raw_message
+        in: path
+        schema:
+          type: string
+      - name: html_message
+        in: path
+        schema:
+          type: string
+      - name: text_message
+        in: path
+        schema:
+          type: string
+      - name: subject
+        in: path
+        schema:
+          type: string
+      - name: to_email
+        in: path
+        schema:
+          type: string
+      - name: email_received
+        in: path
+        schema:
+          type: string
+      - name: state
+        in: path
+        schema:
+          type: string
+      - name: clean_message
+        in: path
+        schema:
+          type: string

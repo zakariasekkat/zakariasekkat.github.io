@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard User email
+  version: v1.0.0
+paths:
+  /api/dashboard/user_emails/:id:
+    delete:
+      summary: destroy  dashboard user email

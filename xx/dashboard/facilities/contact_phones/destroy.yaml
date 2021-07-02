@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Facilities Contact phone
+  version: v1.0.0
+paths:
+  /api/dashboard/facilities/:facility_id/contact_phones/:id:
+    delete:
+      summary: destroy  dashboard facility contact phone

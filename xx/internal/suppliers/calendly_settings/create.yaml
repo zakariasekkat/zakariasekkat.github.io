@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Internal Suppliers Calendly setting
+  version: v1.0.0
+paths:
+  /api/internal/suppliers/calendly_settings:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                calendly_setting:
+                  type: object
+                  properties:
+                    token:
+                      type: string
+                    embed_code:
+                      type: string
+                    enable:
+                      type: string

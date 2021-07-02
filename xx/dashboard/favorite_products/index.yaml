@@ -1,0 +1,91 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Favorite product
+  version: v1.0.0
+paths:
+  /api/internal/companies/favorite_products:
+    get:
+      summary: index  internal companies favorite products
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  image:
+                    type: string
+                  web_path:
+                    type: string
+                  variants:
+                    type: string
+                  standards:
+                    type: string
+                  name:
+                    type: string
+                  msrp:
+                    type: string
+                  bulk_pricing:
+                    type: string
+                  country:
+                    type: string
+                  availability:
+                    type: string
+                  availability_option:
+                    type: string
+                  supplier:
+                    type: string
+      parameters:
+      - name: category_id
+        in: path
+        schema:
+          type: string
+      - name: labels
+        in: path
+        schema:
+          type: string
+      - name: categories
+        in: path
+        schema:
+          type: string
+      - name: search
+        in: path
+        schema:
+          type: string
+      - name: supplier_id
+        in: path
+        schema:
+          type: string
+      - name: certification_body_id
+        in: path
+        schema:
+          type: string
+      - name: auditors
+        in: path
+        schema:
+          type: string
+      - name: certifications_types
+        in: path
+        schema:
+          type: string
+      - name: has_sample
+        in: path
+        schema:
+          type: string
+      - name: availability
+        in: path
+        schema:
+          type: string
+      - name: availability_option
+        in: path
+        schema:
+          type: string
+      - name: tags_item_ids
+        in: path
+        schema:
+          type: string
+      - name: country_id
+        in: path
+        schema:
+          type: string

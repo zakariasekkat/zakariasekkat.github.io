@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  title: Internal Dashboard Posts Standard
+  version: v1.0.0
+paths:
+  /api/internal/dashboard/posts/:post_id/standards:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                standard:
+                  type: object
+                  properties:
+                    standard_id:
+                      type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Standards Certification body
+  version: v1.0.0
+paths:
+  /api/admin/standards/:standard_id/certification_bodies/:id:
+    delete:
+      summary: destroy  admin standard certification body

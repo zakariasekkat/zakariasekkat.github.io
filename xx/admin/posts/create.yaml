@@ -1,0 +1,47 @@
+openapi: 3.0.0
+info:
+  title: Admin Post
+  version: v1.0.0
+paths:
+  /api/admin/posts:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                post:
+                  type: object
+                  properties:
+                    author_name:
+                      type: string
+                    title:
+                      type: string
+                    subtitle:
+                      type: string
+                    body:
+                      type: string
+                    blog_version:
+                      type: string
+                    cover_photo:
+                      type: string
+                    cover_photo_crop_x:
+                      type: string
+                    cover_photo_crop_y:
+                      type: string
+                    cover_photo_crop_w:
+                      type: string
+                    cover_photo_crop_h:
+                      type: string
+                    category_ids:
+                      type: string
+                    tag_ids:
+                      type: string
+                    product_ids:
+                      type: string
+                    country_ids:
+                      type: string
+                    featured:
+                      type: string

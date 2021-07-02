@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Internal Post tag
+  version: v1.0.0
+paths:
+  /api/internal/blogs/tags:
+    get:
+      summary: index  internal tags
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  title:
+                    type: string
+                  slug:
+                    type: string
+                  posts_count:
+                    type: string
+      parameters:
+      - name: has_posts
+        in: path
+        schema:
+          type: string
+      - name: title
+        in: path
+        schema:
+          type: string

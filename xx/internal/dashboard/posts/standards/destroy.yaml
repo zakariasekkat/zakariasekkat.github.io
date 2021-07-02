@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Dashboard Posts Standard
+  version: v1.0.0
+paths:
+  /api/internal/dashboard/posts/:post_id/standards/:id:
+    delete:
+      summary: destroy  internal dashboard post standard

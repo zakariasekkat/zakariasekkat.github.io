@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: User Omniauth callback
+  version: v1.0.0
+paths:
+  /auth/google/callback:
+    post:
+      summary: google  auth google callback

@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Become supplier
+  version: v1.0.0
+paths:
+  /api/internal/companies/become_supplier:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                supplier:
+                  type: object
+                  properties:
+                    country_id:
+                      type: string
+                    company_type_id:
+                      type: string
+                    company_industry_id:
+                      type: string
+                    working_with_agents:
+                      type: string
+                    registration_fee_plan_id:
+                      type: string

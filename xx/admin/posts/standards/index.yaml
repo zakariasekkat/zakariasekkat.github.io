@@ -1,0 +1,45 @@
+openapi: 3.0.0
+info:
+  title: Admin Posts Standard
+  version: v1.0.0
+paths:
+  /api/admin/posts/:post_id/standards:
+    get:
+      summary: index  admin post standards
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  body_text:
+                    type: string
+                  logo:
+                    type: string
+                  cover:
+                    type: string
+                  state:
+                    type: string
+                  slug:
+                    type: string
+                  include_in_search:
+                    type: string
+                  search_position:
+                    type: string
+                  kind:
+                    type: string
+                  featured_in_search:
+                    type: string
+                  types:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string

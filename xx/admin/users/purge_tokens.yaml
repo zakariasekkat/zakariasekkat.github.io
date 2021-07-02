@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin User
+  version: v1.0.0
+paths:
+  /api/admin/users/:id/purge_tokens:
+    patch:
+      summary: purge_tokens  purge tokens admin user

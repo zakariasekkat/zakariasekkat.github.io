@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Admin Product tags item
+  version: v1.0.0
+paths:
+  /api/admin/product_tags_items:
+    get:
+      summary: index  admin product tags items
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  dictionary_item:
+                    type: string
+      parameters:
+      - name: dictionary_item_id
+        in: path
+        schema:
+          type: string
+      - name: product_id
+        in: path
+        schema:
+          type: string

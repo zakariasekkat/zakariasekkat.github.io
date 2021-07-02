@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Moderated company lead
+  version: v1.0.0
+paths:
+  /api/admin/moderated_company_leads/:id/reject:
+    patch:
+      summary: reject  reject admin moderated company lead

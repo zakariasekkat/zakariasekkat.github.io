@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Scope certificate
+  version: v1.0.0
+paths:
+  /api/dashboard/certificates/scope_certificates:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                scope_certificate:
+                  type: object
+                  properties:
+                    reference_number:
+                      type: string
+                    licence_number:
+                      type: string
+                    standard_name:
+                      type: string
+                    auditor_name:
+                      type: string
+                    issued_on:
+                      type: string
+                    started_at:
+                      type: string
+                    valid_until:
+                      type: string
+                    upload:
+                      type: string

@@ -1,0 +1,45 @@
+openapi: 3.0.0
+info:
+  title: Admin Posts Tag
+  version: v1.0.0
+paths:
+  /api/admin/posts/:post_id/tags:
+    get:
+      summary: index  admin post tags
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  title:
+                    type: string
+                  slug:
+                    type: string
+                  posts_count:
+                    type: string
+      parameters:
+      - name: by_context
+        in: path
+        schema:
+          type: string
+      - name: title
+        in: path
+        schema:
+          type: string
+      - name: sort_with
+        in: path
+        schema:
+          type: string
+      - name: posts_count_start
+        in: path
+        schema:
+          type: string
+      - name: posts_count_end
+        in: path
+        schema:
+          type: string

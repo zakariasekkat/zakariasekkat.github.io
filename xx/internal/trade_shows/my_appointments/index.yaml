@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Trade shows My appointment
+  version: v1.0.0
+paths:
+  /api/internal/trade_shows/my_appointments:
+    get:
+      summary: index  internal trade shows my appointments

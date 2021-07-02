@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Companies interest
+  version: v1.0.0
+paths:
+  /api/admin/platform/companies_interests/:id/toggle_dashboard_visibility:
+    patch:
+      summary: toggle_dashboard_visibility  toggle dashboard visibility admin platform companies interest

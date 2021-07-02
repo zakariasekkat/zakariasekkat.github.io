@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Internal product
+  version: v1.0.0
+paths:
+  /api/dashboard/internal_products/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                internal_product:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    sku:
+                      type: string
+                    category_id:
+                      type: string
+                    cover_image:
+                      type: string
+                    note:
+                      type: string

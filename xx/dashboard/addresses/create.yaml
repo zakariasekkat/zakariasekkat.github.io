@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Address
+  version: v1.0.0
+paths:
+  /api/internal/companies/addresses:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                address:
+                  type: object
+                  properties:
+                    address_1:
+                      type: string
+                    address_2:
+                      type: string
+                    city:
+                      type: string
+                    code:
+                      type: string
+                    name:
+                      type: string
+                    phone:
+                      type: string
+                    shipping:
+                      type: string
+                    title:
+                      type: string
+                    zip:
+                      type: string
+                    country_id:
+                      type: string
+                    country_region_id:
+                      type: string

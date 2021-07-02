@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Catalogues Item
+  version: v1.0.0
+paths:
+  /api/dashboard/catalogues/:catalogue_id/items:
+    get:
+      summary: index  dashboard catalogue items
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  catalogue_id:
+                    type: string
+                  product:
+                    type: string
+      parameters:
+      - name: catalogue_id
+        in: path
+        schema:
+          type: string
+      - name: name
+        in: path
+        schema:
+          type: string

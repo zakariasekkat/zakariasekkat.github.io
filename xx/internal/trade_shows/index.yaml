@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Trade show
+  version: v1.0.0
+paths:
+  /api/internal/trade_shows:
+    get:
+      summary: index  internal trade shows

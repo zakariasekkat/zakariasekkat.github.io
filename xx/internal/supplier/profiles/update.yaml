@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Internal Supplier Profile
+  version: v1.0.0
+paths:
+  /api/internal/supplier/profile:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                supplier:
+                  type: object
+                  properties:
+                    category_ids:
+                      type: string
+                    showroom_state:
+                      type: string
+                    info:
+                      type: string
+                    extra_content:
+                      type: string
+                    accepted_payment_method_ids:
+                      type: string

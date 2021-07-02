@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: Admin Auditors Medium
+  version: v1.0.0
+paths:
+  /api/admin/auditors/:auditor_id/media:
+    get:
+      summary: index  admin auditor media
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  kind:
+                    type: string
+                  position:
+                    type: string
+                  file:
+                    type: string
+                  media_data:
+                    type: string
+                  title:
+                    type: string
+      parameters:
+      - name: certifier_id
+        in: path
+        schema:
+          type: string
+      - name: kind
+        in: path
+        schema:
+          type: string
+      - name: title
+        in: path
+        schema:
+          type: string

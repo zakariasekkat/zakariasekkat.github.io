@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Companies Companies Standards buyer
+  version: v1.0.0
+paths:
+  /api/internal/companies/labels:
+    get:
+      summary: index  internal companies labels

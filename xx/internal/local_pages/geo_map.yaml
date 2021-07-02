@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Local page
+  version: v1.0.0
+paths:
+  /api/internal/local_pages/:country_id/:slug/map:
+    get:
+      summary: geo_map  map internal local page

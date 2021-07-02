@@ -1,0 +1,89 @@
+openapi: 3.0.0
+info:
+  title: Admin Supplier
+  version: v1.0.0
+paths:
+  /api/admin/suppliers:
+    get:
+      summary: index  admin suppliers
+      parameters:
+      - name: state
+        in: path
+        schema:
+          type: string
+      - name: company_name
+        in: path
+        schema:
+          type: string
+      - name: city
+        in: path
+        schema:
+          type: string
+      - name: zip
+        in: path
+        schema:
+          type: string
+      - name: postal_code
+        in: path
+        schema:
+          type: string
+      - name: radius
+        in: path
+        schema:
+          type: string
+      - name: label
+        in: path
+        schema:
+          type: string
+      - name: label_ids
+        in: path
+        schema:
+          type: string
+      - name: certifier_ids
+        in: path
+        schema:
+          type: string
+      - name: category_id
+        in: path
+        schema:
+          type: string
+      - name: claimed
+        in: path
+        schema:
+          type: string
+      - name: country_id
+        in: path
+        schema:
+          type: string
+      - name: country_state_id
+        in: path
+        schema:
+          type: string
+      - name: has_country_state
+        in: path
+        schema:
+          type: string
+      - name: has_country_state_city
+        in: path
+        schema:
+          type: string
+      - name: has_country_postal_code
+        in: path
+        schema:
+          type: string
+      - name: sort_suppliers
+        in: path
+        schema:
+          type: string
+      - name: certifications_types
+        in: path
+        schema:
+          type: string
+      - name: tags
+        in: path
+        schema:
+          type: string
+      - name: local_page_id
+        in: path
+        schema:
+          type: string

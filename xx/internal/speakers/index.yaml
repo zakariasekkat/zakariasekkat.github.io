@@ -1,0 +1,53 @@
+openapi: 3.0.0
+info:
+  title: Internal Speaker
+  version: v1.0.0
+paths:
+  /api/internal/speakers:
+    get:
+      summary: index  internal speakers
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  full_name:
+                    type: string
+                  job:
+                    type: string
+                  company_name:
+                    type: string
+                  description:
+                    type: string
+                  avatar_url:
+                    type: string
+                  email:
+                    type: string
+                  website:
+                    type: string
+                  facebook_link:
+                    type: string
+                  twitter_link:
+                    type: string
+                  instagram_link:
+                    type: string
+                  linkedin_link:
+                    type: string
+      parameters:
+      - name: full_name
+        in: path
+        schema:
+          type: string
+      - name: company_name
+        in: path
+        schema:
+          type: string
+      - name: q
+        in: path
+        schema:
+          type: string

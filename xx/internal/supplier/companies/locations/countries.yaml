@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Supplier Companies Location
+  version: v1.0.0
+paths:
+  /api/internal/supplier/companies/:company_id/locations/countries:
+    get:
+      summary: countries  countries internal supplier company locations

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Favorite company
+  version: v1.0.0
+paths:
+  /api/dashboard/favorite_companies/:id:
+    delete:
+      summary: destroy  dashboard favorite company

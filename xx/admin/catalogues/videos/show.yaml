@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Catalogues Video
+  version: v1.0.0
+paths:
+  /api/admin/catalogues/:catalogue_id/videos/:id:
+    get:
+      summary: show  admin catalogue video

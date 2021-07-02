@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Admin Platform Companies interest
+  version: v1.0.0
+paths:
+  /api/admin/platform/companies_interests:
+    get:
+      summary: index  admin platform companies interests
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  slug:
+                    type: string
+                  companies_count:
+                    type: string
+                  featured:
+                    type: string
+                  show_in_dashboard:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string

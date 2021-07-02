@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Admin Moderated company lead
+  version: v1.0.0
+paths:
+  /api/admin/moderated_company_leads:
+    get:
+      summary: index  admin moderated company leads
+      parameters:
+      - name: moderator_id
+        in: path
+        schema:
+          type: string
+      - name: recipient_company_id
+        in: path
+        schema:
+          type: string
+      - name: sender_company_id
+        in: path
+        schema:
+          type: string
+      - name: state
+        in: path
+        schema:
+          type: string
+      - name: user_name
+        in: path
+        schema:
+          type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Post image
+  version: v1.0.0
+paths:
+  /api/admin/post_images/:id:
+    delete:
+      summary: destroy

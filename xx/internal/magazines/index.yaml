@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  title: Internal Magazine
+  version: v1.0.0
+paths:
+  /api/internal/magazines:
+    get:
+      summary: index  internal magazines
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  cover_image:
+                    type: string
+                  web_path:
+                    type: string
+                  suppliers:
+                    type: string
+                  items_count:
+                    type: string
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: visibility
+        in: path
+        schema:
+          type: string
+      - name: supplier_id
+        in: path
+        schema:
+          type: string
+      - name: category_id
+        in: path
+        schema:
+          type: string
+      - name: tag_id
+        in: path
+        schema:
+          type: string

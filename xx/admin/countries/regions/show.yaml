@@ -1,0 +1,30 @@
+openapi: 3.0.0
+info:
+  title: Admin Countries Region
+  version: v1.0.0
+paths:
+  /api/admin/countries/:country_id/regions/:id:
+    get:
+      summary: show  admin country region
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  abbreviation:
+                    type: string
+                  cities_count:
+                    type: string
+                  postal_codes_count:
+                    type: string
+                  country_id:
+                    type: string
+                  data_quality:
+                    type: string

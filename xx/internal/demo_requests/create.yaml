@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Internal Demo request
+  version: v1.0.0
+paths:
+  /api/internal/demo_requests:
+    post:
+      summary: create  internal demo requests
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                demo_request:
+                  type: object
+                  properties:
+                    first_name:
+                      type: string
+                    last_name:
+                      type: string
+                    email:
+                      type: string
+                    phone:
+                      type: string
+                    title:
+                      type: string
+                    company_name:
+                      type: string
+                    request_kind:
+                      type: string
+                    preferred_language:
+                      type: string

@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: Admin Certification body
+  version: v1.0.0
+paths:
+  /api/admin/certification_bodies/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                certification_body:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    abbreviation:
+                      type: string
+                    instagram_url:
+                      type: string
+                    facebook_url:
+                      type: string
+                    twitter_url:
+                      type: string
+                    about_description:
+                      type: string
+                    tagline:
+                      type: string
+                    website:
+                      type: string
+                    linkedin:
+                      type: string
+                    founded_in:
+                      type: string
+                    number_employees:
+                      type: string

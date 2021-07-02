@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: Admin Posts Magazine
+  version: v1.0.0
+paths:
+  /api/admin/posts/:post_id/magazines:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                magazine:
+                  type: object
+                  properties:
+                    magazine_id:
+                      type: string
+                    post_id:
+                      type: string

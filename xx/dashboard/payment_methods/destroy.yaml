@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Payment method
+  version: v1.0.0
+paths:
+  /api/internal/companies/payment_methods/:id:
+    delete:
+      summary: destroy  internal companies payment method

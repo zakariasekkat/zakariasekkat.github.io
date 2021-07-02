@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  title: Admin Company
+  version: v1.0.0
+paths:
+  /api/admin/companies/:id:
+    put:
+      summary: update  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                company:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    email:
+                      type: string
+                    phone:
+                      type: string
+                    default_currency:
+                      type: string
+                    default_locale:
+                      type: string
+                    default_billing_address_id:
+                      type: string
+                    default_address_id:
+                      type: string
+                    description:
+                      type: string
+                    logo:
+                      type: string
+                    cover:
+                      type: string
+                    country_id:
+                      type: string
+                    founded_in:
+                      type: string
+                    number_employees:
+                      type: string
+                    visibility_permissions:
+                      type: string
+                    type_ids:
+                      type: string
+                    extra_info:
+                      type: string

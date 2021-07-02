@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Products taxonomy
+  version: v1.0.0
+paths:
+  /api/admin/products_taxonomies/:id/toggle_beta_access:
+    patch:
+      summary: toggle_beta_access  toggle beta access admin products taxonomy

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Home
+  version: v1.0.0
+paths:
+  /api/admin/suppliers_by_country:
+    get:
+      summary: suppliers_by_country  admin suppliers by country

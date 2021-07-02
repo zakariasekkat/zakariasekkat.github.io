@@ -1,0 +1,20 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Company connection
+  version: v1.0.0
+paths:
+  /api/dashboard/connections/map:
+    get:
+      summary: geo_map  map dashboard connections
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  nodes:
+                    type: string
+                  links:
+                    type: string

@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Admin Local associations Tag
+  version: v1.0.0
+paths:
+  /api/admin/local_associations/:local_association_id/tags:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                local_association_tag:
+                  type: object
+                  properties:
+                    tag_id:
+                      type: string
+                    local_association_id:
+                      type: string
+                    position:
+                      type: string

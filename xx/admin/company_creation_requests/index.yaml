@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: Admin Company creation request
+  version: v1.0.0
+paths:
+  /api/admin/company_creation_requests:
+    get:
+      summary: index  admin company creation requests
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  admin_message:
+                    type: string
+                  message:
+                    type: string
+                  name:
+                    type: string
+                  phone_number:
+                    type: string
+                  role:
+                    type: string
+                  state:
+                    type: string
+                  website:
+                    type: string
+                  created_at:
+                    type: string
+                  country:
+                    type: string
+                  user:
+                    type: string
+      parameters:
+      
+        in: path
+        schema:
+          type: string

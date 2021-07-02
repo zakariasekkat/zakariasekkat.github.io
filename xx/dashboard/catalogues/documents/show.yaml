@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Catalogues Document
+  version: v1.0.0
+paths:
+  /api/dashboard/catalogues/:catalogue_id/documents/:id:
+    get:
+      summary: show  dashboard catalogue document

@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Admin Products taxonomy
+  version: v1.0.0
+paths:
+  /api/admin/products_taxonomies:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                category:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    status_text:
+                      type: string
+                    logo:
+                      type: string
+                    cover:
+                      type: string
+                    post_tag:
+                      type: string
+                    product_template_id:
+                      type: string
+                    parent_id:
+                      type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Companies Location
+  version: v1.0.0
+paths:
+  /api/admin/companies/:company_id/locations/:id/archive:
+    put:
+      summary: archive  archive admin company location

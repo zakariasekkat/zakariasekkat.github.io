@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Company connection
+  version: v1.0.0
+paths:
+  /api/dashboard/connections/:id/invite:
+    patch:
+      summary: invite  invite dashboard connection

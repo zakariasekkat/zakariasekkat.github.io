@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Auditors Product
+  version: v1.0.0
+paths:
+  /api/admin/auditors/:auditor_id/products/:id:
+    get:
+      summary: show  admin auditor product

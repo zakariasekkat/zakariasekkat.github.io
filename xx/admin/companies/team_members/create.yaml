@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Admin Companies Team member
+  version: v1.0.0
+paths:
+  /api/admin/companies/:company_id/team_members:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                company_team_member:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    avatar:
+                      type: string
+                    role_id:
+                      type: string
+                    email:
+                      type: string
+                    phone:
+                      type: string

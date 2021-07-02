@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Admin Suppliers My appointment
+  version: v1.0.0
+paths:
+  /api/admin/suppliers/:supplier_id/my_appointments:
+    get:
+      summary: index  admin supplier my appointments
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  appointments:
+                    type: string
+      parameters:
+      - name: q
+        in: path
+        schema:
+          type: string

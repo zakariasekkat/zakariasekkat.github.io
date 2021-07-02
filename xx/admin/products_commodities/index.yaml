@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Admin Products commodity
+  version: v1.0.0
+paths:
+  /api/admin/products_commodities:
+    get:
+      summary: index  admin products commodities
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  product:
+                    type: string
+                  commodity:
+                    type: string
+      parameters:
+      - name: product_id
+        in: path
+        schema:
+          type: string
+      - name: commodity_id
+        in: path
+        schema:
+          type: string

@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Admin Suppliers service
+  version: v1.0.0
+paths:
+  /api/admin/suppliers_services:
+    get:
+      summary: index  admin suppliers services
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  dictionary_item:
+                    type: string
+      parameters:
+      - name: dictionary_item_id
+        in: path
+        schema:
+          type: string
+      - name: supplier_id
+        in: path
+        schema:
+          type: string

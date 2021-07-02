@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Auditors Location
+  version: v1.0.0
+paths:
+  /api/admin/auditors/:auditor_id/locations/:id:
+    put:
+      summary: update

@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Admin Posts Category
+  version: v1.0.0
+paths:
+  /api/admin/posts/:post_id/categories:
+    get:
+      summary: index  admin post categories
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  title:
+                    type: string
+                  slug:
+                    type: string
+                  cover:
+                    type: string
+      parameters:
+      - name: by_context
+        in: path
+        schema:
+          type: string
+      - name: title
+        in: path
+        schema:
+          type: string

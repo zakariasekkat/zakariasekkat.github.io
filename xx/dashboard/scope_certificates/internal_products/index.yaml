@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Scope certificates Internal product
+  version: v1.0.0
+paths:
+  /api/dashboard/certificates/scope_certificates/:scope_certificate_id/internal_products:
+    get:
+      summary: index  dashboard certificates scope certificate internal products
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  internal_product:
+                    type: string
+      parameters:
+      - name: q
+        in: path
+        schema:
+          type: string

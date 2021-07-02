@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  title: Admin Dictionaries Import
+  version: v1.0.0
+paths:
+  /api/admin/dictionaries/imports/:dictionary_key:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                :
+                  type: object
+                  properties:
+                    file:
+                      type: string

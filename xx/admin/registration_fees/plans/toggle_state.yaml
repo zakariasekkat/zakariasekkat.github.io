@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Registration fees Plan
+  version: v1.0.0
+paths:
+  /api/admin/registration_fees/:registration_fee_id/plans/:id/toggle_state:
+    put:
+      summary: toggle_state  toggle state admin registration fee plan

@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: Admin Product template
+  version: v1.0.0
+paths:
+  /api/admin/product_templates:
+    get:
+      summary: index  admin product templates
+      parameters:
+      - name: name
+        in: path
+        schema:
+          type: string
+      - name: state
+        in: path
+        schema:
+          type: string

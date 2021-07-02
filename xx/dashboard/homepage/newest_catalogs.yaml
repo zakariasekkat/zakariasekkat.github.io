@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Homepage
+  version: v1.0.0
+paths:
+  /api/dashboard/homepage/newest_catalogs:
+    get:
+      summary: newest_catalogs  newest catalogs dashboard homepage index

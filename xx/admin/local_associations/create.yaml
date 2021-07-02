@@ -1,0 +1,45 @@
+openapi: 3.0.0
+info:
+  title: Admin Local association
+  version: v1.0.0
+paths:
+  /api/admin/local_associations:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                local_association:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    description:
+                      type: string
+                    country_id:
+                      type: string
+                    country_region_id:
+                      type: string
+                    country_region_city_id:
+                      type: string
+                    country_postal_code_id:
+                      type: string
+                    category_id:
+                      type: string
+                    logo:
+                      type: string
+                    cover_image:
+                      type: string
+                    website:
+                      type: string
+                    facebook_url:
+                      type: string
+                    twitter_url:
+                      type: string
+                    instagram_url:
+                      type: string
+                    pinterest_url:
+                      type: string

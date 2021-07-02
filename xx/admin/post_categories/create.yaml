@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Admin Post category
+  version: v1.0.0
+paths:
+  /api/admin/post_categories:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                post_category:
+                  type: object
+                  properties:
+                    title:
+                      type: string
+                    slug:
+                      type: string
+                    cover:
+                      type: string
+                    cover_alt_text:
+                      type: string
+                    cover_description:
+                      type: string
+                    cover_legend:
+                      type: string

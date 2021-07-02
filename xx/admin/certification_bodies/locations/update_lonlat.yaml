@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Certification bodies Location
+  version: v1.0.0
+paths:
+  /api/admin/certification_bodies/:certification_body_id/locations/:id/update_lonlat:
+    put:
+      summary: update_lonlat  update lonlat admin certification body location

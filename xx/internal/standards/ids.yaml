@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Standard
+  version: v1.0.0
+paths:
+  /api/internal/standards/ids:
+    get:
+      summary: ids  ids internal standards

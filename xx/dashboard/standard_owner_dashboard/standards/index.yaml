@@ -1,0 +1,26 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Standard owner dashboard Standard
+  version: v1.0.0
+paths:
+  /api/dashboard/managed_standards:
+    get:
+      summary: index  dashboard managed standards
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  state:
+                    type: string
+                  logo:
+                    type: string
+                  cover:
+                    type: string

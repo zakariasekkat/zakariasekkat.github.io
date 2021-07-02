@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Internal Webinar registrant
+  version: v1.0.0
+paths:
+  /api/internal/webinar_registrants/:id/join_using_websdk:
+    get:
+      summary: join_using_websdk  join using websdk internal webinar registrant

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Companies Supply chain
+  version: v1.0.0
+paths:
+  /api/admin/companies/:company_id/supply_chains/:id:
+    get:
+      summary: show  admin company supply chain

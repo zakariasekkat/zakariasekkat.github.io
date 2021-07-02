@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Admin Standards Medium
+  version: v1.0.0
+paths:
+  /api/admin/standards/:standard_id/media:
+    post:
+      summary: create  
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                medium:
+                  type: object
+                  properties:
+                    file:
+                      type: string
+                    kind:
+                      type: string
+                    title:
+                      type: string

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Admin Session
+  version: v1.0.0
+paths:
+  /api/admin/login:
+    post:
+      summary: create  admin session

@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: Admin Countries Postal code
+  version: v1.0.0
+paths:
+  /api/admin/countries/:country_id/postal_codes:
+    get:
+      summary: index  admin country postal codes
+      responses:
+        200:
+          description: 'success'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  code:
+                    type: string
+                  country_region_id:
+                    type: string
+                  country_region_city_id:
+                    type: string
+      parameters:
+      - name: code
+        in: path
+        schema:
+          type: string
